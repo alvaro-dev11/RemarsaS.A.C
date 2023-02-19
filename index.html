@@ -1,0 +1,683 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- GOOGLE FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+
+    <!-- swiper-bundle -->
+    <link rel="stylesheet" href="./css/swiper-bundle.min.css">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./css/estilos.css">
+    <link rel="stylesheet" href="./css/footer.css">
+    <link rel="stylesheet" href="./css/responsive.css">
+
+
+    <!-- FAVICON -->
+    <link rel="shortcut icon" href="./assets/img/favicon.ico" type="image/x-icon">
+
+    <!-- SCRIPTS JS -->
+    <script src="./js/swiper-bundle.min.js" defer></script>
+    <script src="./js/main.js" defer></script>
+
+
+    <title>REMARSA S.A.C</title>
+</head>
+
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="logo">
+            <a href="/" class="logo__container">
+                <img src="./assets/img/logo.jpg" alt="REMARSA-logo" class="logo__img">
+            </a>
+        </div>
+        <div class="navbar">
+            <div class="info">
+                <div class="info__contact">
+                    <div class="info__item">
+                        <a href="mailto:ventas@remarsac.com">
+                            <img src="./assets/icons/email.svg" alt="email-icon" class="email__icon">
+                            <span class="info__leyenda info__leyenda--email">ventas@remarsac.com</span>
+                        </a>
+                    </div>
+                    <div class="info__item">
+                        <a href="https://api.whatsapp.com/send?phone=+51980126828&text=Hola, me gustaría comprar tu producto!"
+                            target="_blank">
+                            <img src="./assets/icons/phone.svg" alt="email-icon" class="email__icon">
+                            <span class="info__leyenda">980126828</span>
+                        </a>
+                    </div>
+                </div>
+                <div class="info__location">
+                    <a href="contacto">
+                        <img src="./assets/icons/location.svg" alt="email-icon" class="email__icon ">
+                        <span class="info__leyenda">Jr. Santa Leonor 6366 Urb. Santa Luisa SMP Lima - Perú</span>
+                    </a>
+                </div>
+            </div>
+            <nav class="nav">
+                <div class="nav__container">
+                    <a href="#menu" class="menu"><img src="./assets/icons/menu-hamburguer.svg" alt="icon-menu"></a>
+                    <a href="#close" class="menu close"><img src="./assets/icons/close.svg" alt="icon-close"></a>
+
+                    <ul class="nav__menu" id="menu">
+                        <li class="nav__item">
+                            <div class="nav__button">
+                                <img src="./assets/icons/home.svg" alt="icon-home" class="nav__icon">
+                                <a href="#" class="nav__link nav__link--efect">Inicio</a>
+                            </div>
+                        </li>
+                        <li class="nav__item nav__item--click">
+                            <div class="nav__button nav__button--click">
+                                <img src="./assets/icons/products.svg" alt="icon-products" class="nav__icon">
+                                <span class="nav__link nav__link--efect">Productos</span>
+                                <img src="./assets/icons/arrow.svg" alt="icon-arrow" class="nav__arrow">
+                            </div>
+
+                            <ul class="nav__submenu">
+                                <li class="list__inside"><a href="/" class="nav__link nav__link--inside">Vickers</a>
+                                </li>
+                                <li class="list__inside"><a href="/" class="nav__link nav__link--inside">Acoples
+                                        Industriales</a></li>
+                                <li class="list__inside"><a href="/" class="nav__link nav__link--inside">Mangueras
+                                        Hidráulicas y Accesorios</a></li>
+                                <li class="list__inside"><a href="/" class="nav__link nav__link--inside">Acoples
+                                        Rápidos</a></li>
+                                <li class="list__inside"><a href="/" class="nav__link nav__link--inside">Valvulas y
+                                        Cilindros</a></li>
+                                <li class="list__inside"><a href="/" class="nav__link nav__link--inside">Acoples y
+                                        Adaptadores Hidráulicos</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav__item nav__item--click">
+                            <div class="nav__button nav__button--click">
+                                <img src="./assets/icons/services.svg" alt="icon-products" class="nav__icon">
+                                <span class="nav__link nav__link--efect">Servicios</span>
+                                <img src="./assets/icons/arrow.svg" alt="icon-arrow" class="nav__arrow">
+                            </div>
+
+                            <ul class="nav__submenu">
+                                <li class="list__inside"><a href="/"
+                                        class="nav__link nav__link--inside">Mantenimiento</a></li>
+                                <li class="list__inside"><a href="/" class="nav__link nav__link--inside">Ventajas</a>
+                                </li>
+                                <li class="list__inside"><a href="/"
+                                        class="nav__link nav__link--inside">Reparaciones</a></li>
+                                <li class="list__inside"><a href="/" class="nav__link nav__link--inside">Garantía</a>
+                                </li>
+                                <li class="list__inside"><a href="/"
+                                        class="nav__link nav__link--inside">Abastecimiento</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav__item">
+                            <div class="nav__button">
+                                <img src="./assets/icons/especialistas.svg" alt="icon-home" class="nav__icon">
+                                <a href="#" class="nav__link nav__link--efect">Especialistas</a>
+                            </div>
+                        </li>
+                        <li class="nav__item">
+                            <div class="nav__button">
+                                <img src="./assets/icons/nosotros.svg" alt="icon-home" width="24" height="24"
+                                    class="nav__icon">
+                                <a href="#" class="nav__link nav__link--efect">Nosotros</a>
+                            </div>
+                        </li>
+                        <li class="nav__item">
+                            <div class="nav__button">
+                                <img src="./assets/icons/contacto.svg" alt="icon-home" class="nav__icon">
+                                <a href="#" class="nav__link nav__link--efect">Contacto</a>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Slider -->
+    <section class="slider">
+        <div class="swiper bg-slider">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <img src="./assets/img/fondo1.jpeg" alt="fondo1">
+                    <div class="text-content">
+                        <h1 class="title">PRODUCTOS LÍDERES</h1>
+                        <h2 class="subtitle">ESTABLECIDOS DENTRO DE LA MINERIA, PESCA, INDUSTRIA, ETC.</h2>
+                        <p>
+                            REMARSA S.A.C es una empresa con más de <b>30 años de experiencia</b> en el campo de la
+                            comercialización de <b>mangueras hidráulicas</b> e <b>industriales</b>, <b>fajas</b> y
+                            <b>acoples</b>, los cuales pueden ser utilizados en cualquier área.
+                        </p>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <img src="./assets/img/fondo2.webp" alt="fondo2">
+                    <div class="text-content">
+                        <h2 class="subtitle">ESPECIALISTAS EN</h2>
+                        <h1 class="title">MANGUERAS INDUSTRIALES</h1>
+                        <p>
+                            Caracterizadas por su resistencia a las presiones mas exigentes de los fluidos y
+                            sistemas
+                            hidráulicos.
+                            Contamos con un amplia variedad de alternativas en <b>mangueras de mediana</b>,
+                            <b>alta</b>
+                            y <b>extrema presión</b> para los equipos hidráulicos mas exigentes.
+                        </p>
+                    </div>
+                </div>
+                <div class="swiper-slide dark-layer">
+                    <img src="./assets/img/fondo3.jpg" alt="fondo3">
+                    <div class="text-content">
+                        <h2 class="subtitle">ESPECIALISTAS EN</h2>
+                        <h1 class="title">MANGUERAS IDRAULICAS, ACOPLES Y ADAPTADORES</h1>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <img src="./assets/img/fondo4.jpg" alt="fondo4">
+                    <div class="text-content">
+                        <h2 class="subtitle">OFRECEMOS UNA</h2>
+                        <h1 class="title">ALTA GAMA DE ACCESORIOS HIDRÁULICOS E INDUSTRIALES</h1>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <img src="./assets/img/fondo5.jpg" alt="fondo5">
+                    <div class="text-content">
+                        <h2 class="subtitle">OFRECEMOS UN</h2>
+                        <h1 class="title">PERSONAL IDÓNEO CAPACITADO</h1>
+                        <p>
+                            Cualquier repuesto que Usted necesite lo puede encontrar en <b>REMARSA.</b> Tendra a su
+                            disposición un almacén muy completo para solucionar, en forma rápida y eficaz, cualquier
+                            problema hidráulico que su maquinaria pueda sufrir.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="bg-slider-thumbs">
+            <div class="swiper-wrapper thumbs-container">
+                <img src="./assets/img/fondo1.jpeg" class="swiper-slide" alt="">
+                <img src="./assets/img/fondo2.webp" class="swiper-slide" alt="">
+                <img src="./assets/img/fondo3.jpg" class="swiper-slide" alt="">
+                <img src="./assets/img/fondo4.jpg" class="swiper-slide" alt="">
+                <img src="./assets/img/fondo5.jpg" class="swiper-slide" alt="">
+            </div>
+        </div>
+    </section>
+
+    <!-- Bienvenida -->
+    <section class="bienvenida container">
+        <div class="picture">
+            <div class="picture__content">
+                <img src="./assets/img/quienesSomos.jpg" alt="img-experiencia" class="picture__img">
+                <div class="picture__experiencia">
+                    <img src="./assets/img/garantia.png" alt="img-garantia" class="picture__icon">
+                    <div class="picture__textos">
+                        <h1 class="picture__title picture__title--num">30</h1>
+                        <h1 class="picture__title">Años de Experiencia</h1>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <main class="main">
+            <h1 class="main__title">Bienvenidos</h1>
+            <div class="textos">
+                <p class="paragraph">Empresa que ofrece <b>mangueras Industriales</b> y <b>mangueras hidráulicas</b>
+                    para su negocio.</p>
+                <p class="paragraph paragraph--second">Empresa <b>fundada en 1986.</b> Su campo de <b>especialidad
+                        inicial fue la comercialización de mangueras hidráulicas e industriales, fajas y
+                        acoples.</b>
+                    Desde hace varios años en <b>REMARSA</b> apostamos por la <b>especialización en el campo de la
+                        hidráulica</b> para intentar cubrir las necesidades tan variadas de nuestros clientes.
+
+                    Remarsa Hidraulica S.A.C ofrece una <b>mayor variedad de mangueras</b> y<b> accesorios</b> con
+                    <b>más de 750 tipos de configuraciones.</b> En <b>bicromato de zinc</b>, fabricado por
+                    <b>Representaciones Marcos Risco S.A.C.</b>
+                </p>
+            </div>
+            <a href="#" class="cta__btn">
+                <span class="cta__leyend">Conoce más</span>
+                <img src="./assets/icons/arrow_cta.svg" alt="icon-arrow" class="cta__icon">
+            </a>
+
+        </main>
+    </section>
+
+    <!-- Productos -->
+    <section class="productos container">
+        <h2 class="title__second">Variada gama de <strong>PRODUCTOS</strong></h2>
+        <div class="slide-container swiper">
+            <div class="slide-content">
+                <div class="card-wrapper swiper-wrapper">
+                    <div class="card swiper-slide">
+                        <div class="image-content">
+                            <div class="card-image">
+                                <img src="./assets/img/category1.png" alt="" class="card-img">
+                                <a href="#" class="cta__btn card-btn">
+                                    <span class="cta__leyend card-btn-leyend">Conoce más</span>
+                                    <img src="./assets/icons/arrow_cta2.svg" alt="icon-arrow" class="cta__icon">
+                                </a>
+                            </div>
+                        </div>
+    
+                        <a href="/" class="card-content card-content--item">
+                            <img src="./assets/icons/item.svg" alt="icon-item" class="icon__item">
+                            <h2 class="name">Vikers</h2>
+                        </a>
+                    </div>
+                    <div class="card swiper-slide">
+                        <div class="image-content">
+                            <div class="card-image">
+                                <img src="./assets/img/category2.jpg" alt="" class="card-img">
+                                <a href="#" class="cta__btn card-btn">
+                                    <span class="cta__leyend card-btn-leyend">Conoce más</span>
+                                    <img src="./assets/icons/arrow_cta2.svg" alt="icon-arrow" class="cta__icon">
+                                </a>
+                            </div>
+                        </div>
+    
+                        <a href="/" class="card-content card-content--item">
+                            <img src="./assets/icons/item.svg" alt="icon-item" class="icon__item">
+                            <h2 class="name">Acoples industriales</h2>
+                        </a>
+                    </div>
+                    <div class="card swiper-slide">
+                        <div class="image-content">
+                            <div class="card-image">
+                                <img src="./assets/img/category3.jpeg" alt="" class="card-img">
+                                <a href="#" class="cta__btn card-btn">
+                                    <span class="cta__leyend card-btn-leyend">Conoce más</span>
+                                    <img src="./assets/icons/arrow_cta2.svg" alt="icon-arrow" class="cta__icon">
+                                </a>
+                            </div>
+                        </div>
+    
+                        <a href="/" class="card-content card-content--item">
+                            <img src="./assets/icons/item.svg" alt="icon-item" class="icon__item">
+                            <h2 class="name">Mangueras idráulicas y accesorios</h2>
+                        </a>
+                    </div>
+                    <div class="card swiper-slide">
+                        <div class="image-content">
+                            <div class="card-image">
+                                <img src="./assets/img/category4.webp" alt="" class="card-img">
+                                <a href="#" class="cta__btn card-btn">
+                                    <span class="cta__leyend card-btn-leyend">Conoce más</span>
+                                    <img src="./assets/icons/arrow_cta2.svg" alt="icon-arrow" class="cta__icon">
+                                </a>
+                            </div>
+                        </div>
+    
+                        <a href="/" class="card-content card-content--item">
+                            <img src="./assets/icons/item.svg" alt="icon-item" class="icon__item">
+                            <h2 class="name">Acoples Rápidos</h2>
+                        </a>
+                    </div>
+                    <div class="card swiper-slide">
+                        <div class="image-content">
+                            <div class="card-image">
+                                <img src="./assets/img/category5.jpg" alt="" class="card-img">
+                                <a href="#" class="cta__btn card-btn">
+                                    <span class="cta__leyend card-btn-leyend">Conoce más</span>
+                                    <img src="./assets/icons/arrow_cta2.svg" alt="icon-arrow" class="cta__icon">
+                                </a>
+                            </div>
+                        </div>
+    
+                        <a href="/" class="card-content card-content--item">
+                            <img src="./assets/icons/item.svg" alt="icon-item" class="icon__item">
+                            <h2 class="name">Valvulas y Cilindros</h2>
+                        </a>
+                    </div>
+                    <div class="card swiper-slide">
+                        <div class="image-content">
+                            <div class="card-image">
+                                <img src="./assets/img/category6.webp" alt="" class="card-img">
+                                <a href="#" class="cta__btn card-btn">
+                                    <span class="cta__leyend card-btn-leyend">Conoce más</span>
+                                    <img src="./assets/icons/arrow_cta2.svg" alt="icon-arrow" class="cta__icon">
+                                </a>
+                            </div>
+                        </div>
+    
+                        <a href="/" class="card-content card-content--item">
+                            <img src="./assets/icons/item.svg" alt="icon-item" class="icon__item">
+                            <h2 class="name">Acoples y Adaptadores Hidráulicos</h2>
+                        </a>
+                    </div>
+                </div>
+            </div>
+    
+            <div class="swiper-button-next swiper-navBtn"></div>
+            <div class="swiper-button-prev swiper-navBtn"></div>
+            <!-- <div class="swiper-pagination"></div> -->
+        </div>
+    </section>
+
+    <!-- Porque REMARSA -->
+    <section class="because container">
+        <h2 class="title__second"><strong>¿POR QUÉ</strong> REMARSA S.A.C?</h2>
+        <div class="slide-container slide-container--because swiper">
+            <div class="slide-content">
+                <div class="card-wrapper swiper-wrapper">
+                    <div class="card swiper-slide">
+                        <div class="image-content">
+    
+                            <div class="card-image card-image--because">
+                                <img src="./assets/icons/experiencia2.svg" alt="" class="card-img">
+                            </div>
+                        </div>
+    
+                        <div class="card-content">
+                            <h2 class="name name--because">Experiencia</h2>
+                            <p class="description">Cada <b>manguera</b> y <b>accesorio</b> individual están respaldados por más de <b>30 años de conocimiento</b> en el campo de la Hidráulica, sector Industrial y las mejores marcas Europeas del mercado actual.</p>
+                        </div>
+                    </div>
+                    <div class="card swiper-slide">
+                        <div class="image-content">
+    
+                            <div class="card-image card-image--because">
+                                <img src="./assets/icons/distribucion.svg" alt="" class="card-img">
+                            </div>
+                        </div>
+    
+                        <div class="card-content">
+                            <h2 class="name name--because">Centro de distribución ultra moderno</h2>
+                            <p class="description">Contamos con un centro de distribución ubicado en Lima, que abastece a nuestros clientes directamente. Esta instalación se dedica a realizar <b>entregas en el día, sin errores y a un bajo costo.</b></p>
+                        </div>
+                    </div>
+                    <div class="card swiper-slide">
+                        <div class="image-content">
+    
+                            <div class="card-image card-image--because">
+                                <img src="./assets/icons/servicioCliente.svg" alt="" class="card-img">
+                            </div>
+                        </div>
+    
+                        <div class="card-content">
+                            <h2 class="name name--because">Servicio al cliente</h2>
+                            <p class="description">Nos caracterizamos por ofrecer un <b>servicio de calidad</b>, simpre siendo <b>empáticos</b> y <b>buscando las mejores alternativas</b> para tener contentos y satisfechos a nuestros clientes.</p>
+                        </div>
+                    </div>
+                    <div class="card swiper-slide">
+                        <div class="image-content">
+    
+                            <div class="card-image card-image--because">
+                                <img src="./assets/icons/solucion.svg" alt="" class="card-img">
+                            </div>
+                        </div>
+    
+                        <div class="card-content">
+                            <h2 class="name name--because">Soluciones completamentes integradas</h2>
+                            <p class="description description--size">Las aplicaciones hidráulicas modernas requieren soluciones con conectores de fluidos robustos y con rendimiento garantizado de larga duración. REMARSA S.A.C <b>ofrece una gama completa de mangueras, accesorios y equipos de montaje que están diseñados para trabajar en conjunto sin problemas.</b></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    
+            <div class="swiper-button-next swiper-navBtn swiper-btn swiper-navBtn--next"></div>
+            <div class="swiper-button-prev swiper-navBtn swiper-btn swiper-navBtn--prev"></div>
+            <div class="swiper-pagination"></div>
+        </div>
+    </section>
+
+    <!-- Especialistas -->
+    <section class="especialistas">
+        <header class="container container--esp">
+            <h1 class="main__title main__title--esp">Especialistas</h1>
+            <p class="paragraph paragraph--esp">Desde hace varios años REMARSA en el campo de la hidráulica
+                constituye
+                un punto de referencia seguro y fiable para muchos de los que operan en sectores industriales y de
+                obras.</p>
+        </header>
+        <main class="picture__esp">
+            <img src="./assets/img/especialistas.jpg" alt="image-bg" class="picture__img--bg">
+            <div class="picture__grid container">
+                <div class="picture__item">
+                    <div class="picture__header">
+                        <img src="./assets/icons/repuestos.svg" alt="repuestos" class="picture__img--esp">
+                        <h2 class="picture__title--esp">repuestos</h2>
+                    </div>
+                    <p class="picture__paragraph">Amplia disponibilidad de repuestos y unidades hidráulicas
+                        completas.
+                    </p>
+                </div>
+                <div class="picture__item">
+                    <div class="picture__header">
+                        <img src="./assets/icons/garantia.svg" alt="repuestos" class="picture__img--esp">
+                        <h2 class="picture__title--esp">garantia</h2>
+                    </div>
+                    <p class="picture__paragraph">Garantía de eficiencia con ensayos de todos los componentes
+                        hidráulicos revisados.</p>
+                </div>
+                <div class="picture__item">
+                    <div class="picture__header">
+                        <img src="./assets/icons/tecnicos.svg" alt="repuestos" class="picture__img--esp">
+                        <h2 class="picture__title--esp">técnicos especializados</h2>
+                    </div>
+                    <p class="picture__paragraph">Amplia disponibilidad de repuestos y unidades hidráulicas
+                        completas.
+                    </p>
+                </div>
+                <div class="picture__item">
+                    <div class="picture__header">
+                        <img src="./assets/icons/reparacion.svg" alt="repuestos" class="picture__img--esp">
+                        <h2 class="picture__title--esp">reparación y adaptación</h2>
+                    </div>
+                    <p class="picture__paragraph picture__paragraph--size">Operaciones de revisión completa, reparación y adaptación a las
+                        normativas de maquinarias industriales.</p>
+                </div>
+            </div>
+        </main>
+        <footer class="container container--f">
+            <p class="paragraph paragraph--esp p-f">Nuestros clientes saben que pueden contar con una asistencia
+                calificada, rápida y puntual, solucionando en forma eficaz todo tipo de avería en las maquinarias,
+                evitando así el retraso o la parada del desarrollo de las actividades</p>
+        </footer>
+    </section>
+
+    <!-- Servicios -->
+    <section class="servicios container">
+        <div class="picture picture--serv">
+            <div class="picture__content picture__content--serv">
+                <img src="./assets/img/servicios.jpeg" alt="img-servicios" class="picture__img picture__img--serv">
+            </div>
+        </div>
+        <main class="main">
+            <h1 class="main__title main__title--serv">Servicios <strong>REMARSA S.A.C</strong></h1>
+            <div class="textos">
+                <p class="paragraph paragraph--serv">Representaciones Marcos Risco S.A.C ofrece asesoría permanente
+                    para
+                    los sistemas hidráulicos, localización y distribución de componentes hidráulicos, reparación y
+                    sustitución de equipos, fabricación de unidades de potencia, circuitos hidráulicos y cilindros,
+                    entre otros, brindando confiabilidad y seguridad para un mejor desarrollo en sus procesos.
+                    Nuestro
+                    personal altamente capacitado nos asegura brindar la plena satisfacción y buen servicio a
+                    nuestros
+                    clientes.</p>
+            </div>
+            <a href="#" class="cta__btn">
+                <span class="cta__leyend">Ir a Servicios</span>
+                <img src="./assets/icons/arrow_cta.svg" alt="icon-arrow" class="cta__icon">
+            </a>
+
+        </main>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <main class="footer__main container">
+            <a href="/">
+                <img src="./assets/img/logo.jpg" alt="logo" class="footer__img">
+            </a>
+            <p class="paragraph__main">REMARSA HIDRAULICA S.A.C. es una empresa con más de 30 años de experiencia en
+                la
+                comercialización de mangueras hidráulicas e industriales, fajas y acoples. Ofrecemos una gran
+                variedad
+                de mangueras y accesorios con más de 750 tipos de configuraciones. En bicromato de zinc, fabricado
+                por
+                Representaciones Marcos Risco S.A.C.</p>
+            <div class="footer__box">
+                <h2 class="footer__title">Atención</h2>
+                <div class="footer__item">
+                    <img src="./assets/icons/calendar.svg" alt="icon-calendar" class="footer__icon">
+                    <p class="footer__text footer__text--cursor">Lunes a Viernes: 8:30 am - 5:00 pm</p>
+                </div>
+                <div class="footer__item">
+                    <img src="./assets/icons/calendar.svg" alt="icon-calendar" class="footer__icon">
+                    <p class="footer__text footer__text--cursor">Sábado: 8:30 am - 1:00 pm</p>
+                </div>
+            </div>
+        </main>
+        <div class="footer__contenido container">
+            <div class="footer__box">
+                <h2 class="footer__title">Contacto</h2>
+                <div class="footer__group">
+                    <div class="footer__item">
+                        <a href="/" class="footer__link">
+                            <img src="./assets/icons/location2.svg" alt="icon-location" class="footer__icon">
+                            <p class="footer__text">Jr. Santa Leonor 6366 Urb. Santa Luisa SMP Lima - Peru
+                            </p>
+                        </a>
+                    </div>
+                    <div class="footer__item">
+                        <a href="https://api.whatsapp.com/send?phone=+51980126828&text=Hola, me gustaría comprar tu producto!"
+                            target="_blank" class="footer__link">
+                            <img src="./assets/icons/whatsapp.svg" alt="icon-phone" class="footer__icon">
+                            <p class="footer__text">980126828</p>
+                        </a>
+                    </div>
+                </div>
+                <hr>
+                <div class="footer__group">
+                    <div class="footer__item">
+                        <a href="/" class="footer__link">
+                            <img src="./assets/icons/location2.svg" alt="icon-location" class="footer__icon">
+                            <p class="footer__text">Av. colonial 471 cercado de Lima <b>(SUCURSAL)</b></p>
+                        </a>
+                    </div>
+                    <div class="footer__item">
+                        <a href="https://api.whatsapp.com/send?phone=+51990088849&text=Hola, me gustaría comprar tu producto!"
+                            target="_blank" class="footer__link">
+                            <img src="./assets/icons/whatsapp.svg" alt="icon-phone" class="footer__icon">
+                            <p class="footer__text">990088849</p>
+                        </a>
+                    </div>
+                </div>
+                <hr>
+                <div class="footer__group">
+                    <div class="footer__item">
+                        <a href="/" class="footer__link">
+                            <img src="./assets/icons/location2.svg" alt="icon-location" class="footer__icon">
+                            <p class="footer__text">Av. Enrique Meiggs 1052 Chimbote <b>(SUCURSAL)</b></p>
+                        </a>
+                    </div>
+                    <div class="footer__item">
+                        <a href="https://api.whatsapp.com/send?phone=+51998341086&text=Hola, me gustaría comprar tu producto!"
+                            target="_blank" class="footer__link">
+                            <img src="./assets/icons/whatsapp.svg" alt="icon-phone" class="footer__icon">
+                            <p class="footer__text">998341086</p>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer__box">
+                <h2 class="footer__title">Correos</h2>
+                <div class="footer__group">
+                    <div class="footer__item">
+                        <a href="mailto:ventas@remarsac.com" target="_blank" class="footer__link">
+                            <img src="./assets/icons/email2.svg" alt="icon-phone" class="footer__icon">
+                            <p class="footer__text">ventas@remarsac.com</p>
+                        </a>
+                    </div>
+                </div>
+                <div class="footer__group">
+                    <div class="footer__item">
+                        <a href="mailto:ventas2@remarsac.com" target="_blank" class="footer__link">
+                            <img src="./assets/icons/email2.svg" alt="icon-phone" class="footer__icon">
+                            <p class="footer__text">ventas2@remarsac.com</p>
+                        </a>
+                    </div>
+                </div>
+                <div class="footer__group">
+                    <div class="footer__item">
+                        <a href="mailto:ventas3@remarsac.com" target="_blank" class="footer__link">
+                            <img src="./assets/icons/email2.svg" alt="icon-phone" class="footer__icon">
+                            <p class="footer__text">ventas3@remarsac.com</p>
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+            <div class="footer__box">
+                <h2 class="footer__title">Navegación</h2>
+                <div class="footer__group">
+                    <div class="footer__item">
+                        <a href="/" target="_blank" class="footer__link">
+                            <img src="./assets/icons/navigation.svg" alt="icon-phone" class="footer__icon">
+                            <p class="footer__text">Inicio</p>
+                        </a>
+                    </div>
+                </div>
+                <div class="footer__group">
+                    <div class="footer__item">
+                        <a href="/" target="_blank" class="footer__link">
+                            <img src="./assets/icons/navigation.svg" alt="icon-phone" class="footer__icon">
+                            <p class="footer__text">Productos</p>
+                        </a>
+                    </div>
+                </div>
+                <div class="footer__group">
+                    <div class="footer__item">
+                        <a href="/" target="_blank" class="footer__link">
+                            <img src="./assets/icons/navigation.svg" alt="icon-phone" class="footer__icon">
+                            <p class="footer__text">Servicios</p>
+                        </a>
+                    </div>
+                </div>
+                <div class="footer__group">
+                    <div class="footer__item">
+                        <a href="/" target="_blank" class="footer__link">
+                            <img src="./assets/icons/navigation.svg" alt="icon-phone" class="footer__icon">
+                            <p class="footer__text">Nosotros</p>
+                        </a>
+                    </div>
+                </div>
+                <div class="footer__group">
+                    <div class="footer__item">
+                        <a href="/" target="_blank" class="footer__link">
+                            <img src="./assets/icons/navigation.svg" alt="icon-phone" class="footer__icon">
+                            <p class="footer__text">Contácto</p>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <h3 class="footer__copy container">Copyright © 2023 REMARSA S.A.C - Todos los derechos reservados / Diseñado por
+            Alvaro
+            Villanueva & Daniel Zapata</h3>
+    </footer>
+
+
+    <!-- Botones de ayuda -->
+    <div class="buttons">
+        <a href="https://api.whatsapp.com/send?phone=+51980126828&amp;text=Hola, me gustaría comprar tu producto!"
+            target="_blank" class="btn__help">
+            <img src="./assets/img/whatsapp.png" alt="whatsapp-icon" class="btn__icon" width="80">
+        </a>
+        <button id="up" class="btn__help btn__help--back">
+            <img src="./assets/icons/arrow_up.svg" alt="back-icon" class="btn__icon btn__icon--back">
+        </button>
+    </div>
+</body>
+
+</html>
