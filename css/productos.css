@@ -1,0 +1,232 @@
+@import url('./main.css');
+
+.banner {
+    position: relative;
+    top: 80px;
+    width: 100%;
+    height: 410px;
+    margin-bottom: 125px;
+    background: url(../assets/img/fondo3.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.banner::before{
+    content: '';
+    position: absolute;
+    inset: 0;
+    background-color: var(--color-banner);
+    opacity: .7;
+}
+.banner-title {
+    z-index: 100;
+    position: absolute;
+    inset: 0;
+    display: flex;
+    align-items: center;
+    transform: translateX(-70px);
+    opacity: 0;
+}
+.banner-title.active{
+    transform: translateY(0);
+    opacity: 1;
+    transition: 1s ease;
+    transition-delay: 0.3s;
+    transition-property: transform, opacity;
+}
+
+.banner .title {
+    width: 100%;
+    color: var(--blanco);
+    text-transform: uppercase;
+    letter-spacing: 10px;
+    font-size: 2em;
+    padding-left: 10px;
+    font-weight: 500;
+}
+/*========MENU DE NAVEGACION========*/
+.banner-nav {
+    z-index: 100;
+    position: absolute;
+    bottom: 10%;
+    right: 0;
+    padding-right: 10px;
+
+    display: flex;
+    align-items: center;
+    column-gap: 10px;
+    transform: translateY(-50px);
+    opacity: 0;
+}
+.banner-nav.active{
+    transform: translateY(0);
+    opacity: 1;
+    transition: 1s ease;
+    transition-delay: 0.3s;
+    transition-property: transform, opacity;
+}
+.banner-nav-link,
+.banner-span{
+    text-transform: uppercase;
+    font-size: 1em;
+}
+.banner-nav-link {
+    display: flex;
+    align-items: flex-start;
+    column-gap: 7px;
+    color: var(--blanco);
+    font-weight: 400;
+    transition: color .3s ease;
+}
+.banner-nav-link:hover{
+    color: var(--color-azul-secundario);
+}
+.banner-nav-link-icon {
+    width: 20px;
+}
+
+/*========CARDS CATEGORY========*/
+.productos{
+    padding: 15px;
+}
+.productos-title {
+    position: relative;
+    text-transform: uppercase;
+    color: var(--color-primario);
+    letter-spacing: 1.5px;
+    font-size: 1.8em;
+    font-weight: 400;
+    text-align: center;
+    width: max-content;
+    margin: 0 auto;
+}
+.productos-title::before, .productos-title::after {
+    content: '';
+    position: absolute;
+    height: 100%;
+    width: 3px;
+    background-color: var(--color-oscuro);
+}
+.productos-title::before {
+    left: -25px;
+}
+.productos-title::after {
+    right: -25px;
+}
+.grid-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    grid-template-rows: repeat(2, 1fr);
+    gap: 50px;
+    padding: 0;
+}
+.card {
+    position: relative;
+    width: 100%;
+    height: 300px;
+    border-radius: 5px;
+    cursor: pointer;
+    overflow: hidden;
+}
+.card:before{
+    content: '';
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    background-color: var(--gris);
+    opacity: .5;
+    transform: translateY(100%);
+    transition: .5s ease;
+}
+.card:hover::before{
+    transform: translateY(0);
+}
+.card-img{
+    z-index: -1;
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.card-contet {
+    z-index: 999;
+    position: absolute;
+    inset: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    row-gap: 50px;
+    transition: .3s ease;
+}
+.card-contet:hover{
+    opacity: 1;
+    row-gap: 10px;
+    
+}
+.card-body,
+.card-header{
+    color: var(--blanco);
+    font-weight: 300;
+}
+.card-header {
+    font-size: 2em;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+}
+.card-body {
+    font-size: .9em;
+    letter-spacing: 1.3px;
+}
+.card-footer {
+    width: 25px;
+    height: 25px;
+}
+
+@media (min-width: 768px){
+    .banner .title {
+        font-size: 3.3em;
+        padding-left: 50px;
+    }
+    .banner-nav {
+        bottom: 20%;
+        right: 5%;
+    }
+    .banner-nav-link, 
+    .banner-span {
+        font-size: 1.3em;
+    }
+    .banner-nav-link-icon {
+        width: 25px;
+    }
+    .productos-title {
+        font-size: 2em;
+    }
+    .productos-title::before, .productos-title::after {
+        width: 4px;
+    }
+    .card-header {
+        font-size: 2.2em;
+    }
+    .card-body {
+        font-size: 1em;
+    }
+    .card-footer {
+        width: 40px;
+        height: 40px;
+    }
+}
+@media (min-width: 1120px){
+    .banner {
+        top: 120px;
+        margin-bottom: 150px;
+    }
+    .productos-title {
+        font-size: 2.3em;
+    }
+    .productos-title::before, .productos-title::after {
+        width: 5px;
+    }
+}

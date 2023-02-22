@@ -449,7 +449,7 @@
     display: flex;
     align-items: center;
     gap: 5px;
-    width: 195px;
+    width: 200px;
     padding: 0 20px;
     border: 2px solid var(--color-azul);
     transition: gap .5s ease;
@@ -561,7 +561,7 @@
 .card-btn {
     position: absolute;
     inset: 0;
-    width: 190px;
+    width: 200px;
     height: min-content;
     margin: auto;
     padding: 0px 20px;

@@ -79,3 +79,11 @@ document.addEventListener("click", (e) => {
 window.addEventListener('scroll', () => {
     $btnUp.classList.toggle("visible", window.scrollY > 300)
 });
+
+// ==================================
+const $bannerTitle = document.querySelector(".banner-title"),
+        $bannerNav = document.querySelector(".banner-nav");
+window.addEventListener('load', ()=>{
+    $bannerTitle.classList.add("active");
+    $bannerNav.classList.add("active");
+})
