@@ -126,6 +126,7 @@
     border-radius: 5px;
     cursor: pointer;
     overflow: hidden;
+    transition: .3s ease;
 }
 .card:before{
     content: '';
@@ -181,8 +182,9 @@
     letter-spacing: 1.3px;
 }
 .card-footer {
-    width: 25px;
-    height: 25px;
+    width: 40px;
+    height: 40px;
+    transition: .3s ease;
 }
 
 @media (min-width: 768px){
@@ -218,15 +220,26 @@
         height: 40px;
     }
 }
-@media (min-width: 1120px){
+@media (min-width: 1125px){
     .banner {
         top: 120px;
         margin-bottom: 150px;
     }
+    .banner .title {
+        font-size: 5em;
+        padding-left: 110px;
+    }
     .productos-title {
         font-size: 2.3em;
     }
-    .productos-title::before, .productos-title::after {
+    .productos-title::before, 
+    .productos-title::after {
         width: 5px;
+    }
+    .grid-cards {
+        grid-template-columns: repeat(3, 1fr);
+    }
+    .card-footer:hover{
+        transform: scale(1.2);
     }
 }
