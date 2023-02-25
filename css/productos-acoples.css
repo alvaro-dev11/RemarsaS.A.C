@@ -1,5 +1,11 @@
 @import url('main.css');
 
+.banner--acoples{
+    background: url('../assets/img/acoplesInd/banner.png');
+    background-size: cover;
+    background-position: center;
+}
+
 .banner .title {
     font-size: 1.7em;
 }
