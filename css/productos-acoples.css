@@ -16,13 +16,74 @@
 .banner-nav-link-icon {
     width: 18px;
 }
-
+.card{
+    height: unset;
+}
+.card::before{
+    content: unset;
+}
+.image-content {
+    width: 280px;
+    height: 280px;
+}
+.card-image {
+    height: 100%;
+    width: 100%;
+}
 .grid-card-acoplesInd {
+    min-height: 100vh;
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
     gap: 50px;
     padding: 0;
 }
+/* lIGHT BOX */
+.container-img{
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    transform: translateX(-100%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    transition: transform .5s ease-in-out;
+}
+/* CREAMOS UNA CLASE CON JS PARA HACER LA ANIMACION */
+.move{
+    transform: translateX(0);
+}
+.img-show {
+    position: relative;
+    top: 5%;
+    height: 60%;
+    display: block;
+    object-fit: cover;
+    transform: scale(0);
+    transition: transform .2s .5s;
+}
+/* CREAMOS UNA CLASE CON JS PARA HACER LA ANIMACION */
+.show{
+    transform: scale(1);
+}
+.copy{
+    position: fixed;
+    bottom: 40px;
+    color: #fff;
+}
+.img-close{
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    display: block;
+    width: 40px;
+    cursor: pointer;
+}
+/* FIN lIGHT BOX */
+
 .card-acoplesInd{
     max-width: 300px;
     height: 380px;
@@ -32,14 +93,16 @@
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 1fr 1fr auto;
+    cursor: pointer;
 }
 .card-img {
     width: 100%;
     height: 100%;
     grid-row: 1/2;
+    
 }
 .card-img--size {
-    width: 160px;
+    width: 140px;
     margin: 0 auto;
 }
 .card-body {
@@ -49,6 +112,7 @@
 .card-nombre{
     display: flex;
     align-items: center;
+    justify-content: center;
     column-gap: 10px;
 }
 .card-icon{
@@ -58,7 +122,7 @@
 .card-nombre-item{
     color: var(--negro);
     font-weight: 600;
-    font-size: 14px;
+    font-size: 16px;
 }
 .card-nombre-item--size{
     font-size: 12px;
@@ -66,7 +130,7 @@
 .card-footer-acoplesInd {
     position: relative;
     grid-row: 3/-1;
-    width: 130px;
+    width: 150px;
     align-self: end;
     padding-top: 30px;
 }
@@ -91,8 +155,131 @@
     opacity: .8;
 }
 
+/* Page description */
+
+.figure {
+    max-width: 500px;
+    width: 100%;
+    margin: 0 auto;
+}
+.figure img{
+    width: 100%;
+    height: 100%;
+}
+.textos {
+    width: 100%;
+}
+.textos span {
+    width: 100%;
+    position: relative;
+    font-size: 16px;
+    color: var(--color-secundario);
+    font-weight: 600;
+    display: block;
+    text-align: center;
+    padding-bottom: 25px;
+}
+.textos span::before{
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: var(--color-secundario);
+    width: 55px;
+    height: 4px;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 27px;
+}
+.textos p, 
+.textos ul {
+    margin-top: 45px;
+    font-size: 14px;
+    font-weight: 300;
+}
+.textos ul{
+    list-style: disc;
+    padding-left: 15px;
+}
+
+/* Page Lista de Ferrulas */
+.card-acoplesInd {
+    width: 100%;
+}
+.title-second {
+    display: block;
+    color: var(--color-secundario);
+    font-size: 16px;
+    font-weight: 500;
+    text-align: center;
+}
+
+@media (min-width: 500px){
+    .textos span {
+        font-size: 18px;
+    }
+    .textos p, 
+    .textos ul {
+        font-size: 16px;
+    }
+    .title-second {
+        font-size: 20px;
+    }
+}
 @media (min-width: 768px){
     .grid-card-acoplesInd{
         padding: inherit;
     }
+    .textos span {
+        font-size: 24px;
+    }
+    .textos p, 
+    .textos ul {
+        font-size: 18px;
+    }
+    .title-second{
+        text-align-last: left;
+    }
+    .card-nombre-item{
+        font-size: 16px;
+    }
+    .btn-read{
+        font-size: 18px;
+        font-weight: 600;
+    }
+    .card-nombre{
+        justify-content: flex-start;
+    }
 }
+@media (min-width: 1024px){
+    .column{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        padding: 30px 0;
+    }
+    .title-second{
+        font-size: 26px;
+        margin-left: 100px;
+    }
+    .card-img--size {
+        width: 130px;
+        height: 130px;
+        margin: 0 auto;
+    }
+}
+@media (max-width: 330px){
+    .productos{
+        padding: 0 !important;
+    }
+    .image-content {
+        width: 250px;
+    }
+    .image-content--size{
+        height: 150px;
+    }
+    .name--size{
+        font-size: 15px;
+    }
+}
+

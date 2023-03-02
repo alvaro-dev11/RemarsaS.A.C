@@ -1,4 +1,4 @@
-// Swiper slider
+// ===========Swiper slider===========
 var swiper = new Swiper(".bg-slider-thumbs", {
     loop: true,
     spaceBetween: 0,
@@ -12,7 +12,7 @@ var swiper2 = new Swiper(".bg-slider", {
     },
 });
 
-// NavBar
+// ===========NavBar===========
 let listElements = document.querySelectorAll('.nav__button--click')
 
 listElements.forEach(listElement => {
@@ -31,7 +31,7 @@ listElements.forEach(listElement => {
     })
 })
 
-// Swiper slider productos
+// ===========Swiper slider productos===========
 var swiper = new Swiper(".slide-content", {
     slidesPerView: 3,
     spaceBetween: 25,
@@ -64,7 +64,7 @@ var swiper = new Swiper(".slide-content", {
 
 
 
-// Efecto Scroll en Botones de ayuda
+// ===========Efecto Scroll en Botones de ayuda===========
 const $btnUp = document.getElementById("up");
 
 document.addEventListener("click", (e) => {
@@ -80,7 +80,7 @@ window.addEventListener('scroll', () => {
     $btnUp.classList.toggle("visible", window.scrollY > 300)
 });
 
-// Banner
+// ===========Banner===========
 const $bannerTitle = document.querySelector(".banner-title"),
         $bannerNav = document.querySelector(".banner-nav");
 window.addEventListener('load', ()=>{

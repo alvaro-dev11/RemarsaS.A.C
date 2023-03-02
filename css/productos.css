@@ -53,6 +53,7 @@
 
     display: flex;
     align-items: center;
+    flex-wrap: wrap;
     column-gap: 10px;
     transform: translateY(-50px);
     opacity: 0;
