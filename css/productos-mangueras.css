@@ -1,0 +1,55 @@
+@import url('main.css');
+.banner--mangueras {
+    background: url('../assets/img/mangueras/banner.png');
+    background-size: cover;
+    background-position: center;
+}
+.grid-card-acoplesInd{
+    min-height: unset;
+}
+.title-second{
+    color: var(--negro);
+}
+.title-second span{
+    color: var(--color-primario);
+}
+.card-img {
+    width: 100%;
+    height: auto;
+}
+.card-img--s {
+    width: 100%;
+    height: 100%;
+    grid-row: 1/2;
+}
+.card-nombre{
+    justify-content: unset;
+}
+.card-nombre-item--size{
+    font-weight: 600;
+    font-size: 24px;
+    text-transform: uppercase;
+}
+.btn-read{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.btn-read img{
+    transform: rotate(90deg);
+}
+.img-show{
+    height: 10%;
+}
+
+@media (min-width: 500px){
+    .img-show {
+        height: 20%;
+    }
+}
+
+@media (min-width: 768px){
+    .img-show {
+        height: 25%;
+    }
+}

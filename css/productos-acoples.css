@@ -22,6 +22,9 @@
 .card::before{
     content: unset;
 }
+.card-img--size {
+    z-index: 10;
+}
 .image-content {
     width: 280px;
     height: 280px;
@@ -38,7 +41,8 @@
     padding: 0;
 }
 /* lIGHT BOX */
-.container-img{
+.container-img {
+    z-index: 1000;
     position: fixed;
     top: 0;
     left: 0;
@@ -49,7 +53,6 @@
     display: flex;
     justify-content: center;
     align-items: center;
-
     transition: transform .5s ease-in-out;
 }
 /* CREAMOS UNA CLASE CON JS PARA HACER LA ANIMACION */
@@ -59,7 +62,7 @@
 .img-show {
     position: relative;
     top: 5%;
-    height: 60%;
+    height: 30%;
     display: block;
     object-fit: cover;
     transform: scale(0);
@@ -73,6 +76,8 @@
     position: fixed;
     bottom: 40px;
     color: #fff;
+    font-size: 14px;
+    text-align: center;
 }
 .img-close{
     position: absolute;
@@ -89,17 +94,18 @@
     height: 380px;
     margin-left: auto;
     margin-right: auto;
+    padding: 10px;
     position: relative;
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 1fr 1fr auto;
     cursor: pointer;
+    box-shadow: var(--sombra);
 }
 .card-img {
-    width: 100%;
-    height: 100%;
+    width: 265px;
+    margin: auto;
     grid-row: 1/2;
-    
 }
 .card-img--size {
     width: 140px;
@@ -156,11 +162,16 @@
 }
 
 /* Page description */
-
+.column{
+    display: flex;
+    flex-direction: column;
+}
 .figure {
     max-width: 500px;
     width: 100%;
     margin: 0 auto;
+    display: flex;
+    order: 2;
 }
 .figure img{
     width: 100%;
@@ -168,6 +179,7 @@
 }
 .textos {
     width: 100%;
+    order: 1;
 }
 .textos span {
     width: 100%;
@@ -226,6 +238,12 @@
     .title-second {
         font-size: 20px;
     }
+    .img-show {
+        height: 45%;
+    }
+    .copy {
+        font-size: 16px;
+    }
 }
 @media (min-width: 768px){
     .grid-card-acoplesInd{
@@ -251,6 +269,9 @@
     .card-nombre{
         justify-content: flex-start;
     }
+    .img-show {
+        height: 50%;
+    }
 }
 @media (min-width: 1024px){
     .column{
@@ -258,14 +279,23 @@
         grid-template-columns: repeat(2, 1fr);
         padding: 30px 0;
     }
+    .figure{
+        order: unset;
+    }
     .title-second{
         font-size: 26px;
         margin-left: 100px;
+    }
+    .card-img {
+        width: 240px;
     }
     .card-img--size {
         width: 130px;
         height: 130px;
         margin: 0 auto;
+    }
+    .img-show {
+        height: 60%;
     }
 }
 @media (max-width: 330px){
