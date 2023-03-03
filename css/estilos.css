@@ -534,8 +534,8 @@
 
 .card-image {
     position: relative;
-    height: 240px;
-    width: 240px;
+    height: auto;
+    width: 100%;
     overflow: hidden;
     box-shadow: var(--sombra);
 }
@@ -724,8 +724,7 @@
 }
 
 .picture__img--esp {
-    width: 120px;
-    height: 120px;
+    width: 90px;
 }
 
 .picture__grid {
@@ -747,7 +746,7 @@
     gap: 30px;
     text-align: center;
     overflow-x: hidden;
-    width: min-content;
+    width: 100%;
 }
 
 .picture__header {
@@ -761,12 +760,12 @@
     color: var(--color-azul-secundario);
     text-transform: uppercase;
     font-weight: 700;
-    font-size: 1.3rem;
+    font-size: 16px;
 }
 
 .picture__paragraph {
     color: var(--blanco);
-    font-size: 16px;
+    font-size: 14px;
     font-weight: 300;
     word-spacing: 2.5px;
 }

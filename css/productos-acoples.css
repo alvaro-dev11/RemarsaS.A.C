@@ -5,16 +5,27 @@
     background-size: cover;
     background-position: center;
 }
+.banner--acoplesA{
+    background: url('../assets/img/acoplesA/banner.png');
+    background-size: cover;
+    background-position: center;
+}
 
 .banner .title {
-    font-size: 1.7em;
+    font-size: 32px;
+}
+.banner .title--size{
+    font-size: 26px;
 }
 .banner-nav-link, 
 .banner-span {
     font-size: .8em;
 }
-.banner-nav-link-icon {
-    width: 18px;
+.banner-nav-link-icon{
+    width: 17px;
+}
+.banner-nav{
+    margin-left: 10px;
 }
 .card{
     height: unset;
@@ -272,6 +283,9 @@
     .img-show {
         height: 50%;
     }
+    .banner-nav-link-icon{
+        width: 25px;
+    }
 }
 @media (min-width: 1024px){
     .column{
@@ -297,6 +311,15 @@
     .img-show {
         height: 60%;
     }
+    .textos p{
+        line-height: 1.8;
+    }
+    .textos--size p{
+        font-size: 20px;
+    }
+    .textos span{
+        font-size: 28px;
+    }
 }
 @media (max-width: 330px){
     .productos{
@@ -304,12 +327,19 @@
     }
     .image-content {
         width: 250px;
+        height: 165px;
     }
     .image-content--size{
         height: 150px;
     }
+    .name{
+        font-size: 15px;
+    }
     .name--size{
         font-size: 15px;
+    }
+    .banner .title{
+        font-size: 28px;
     }
 }
 

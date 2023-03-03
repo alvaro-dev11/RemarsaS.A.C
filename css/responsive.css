@@ -93,6 +93,7 @@
 
     .nav__icon {
         display: flex;
+        width: 20px;
     }
 
     .nav__link {
@@ -100,6 +101,7 @@
         display: block;
         padding: 15px 0;
         text-decoration: none;
+        font-size: 14px;
     }
 
     .nav__link--inside {
@@ -558,7 +560,7 @@
         width: 18%;
     }
     .picture__title{
-        font-size: 2rem;
+        font-size: 1.8em;
     }
     .picture__title--num{
         font-size: 4rem;
@@ -571,16 +573,16 @@
     }
     /*productos*/
     .card-image {
-        height: 280px;
-        width: 280px;
+        height: auto;
+        width: 100%;
     }
     .card-btn{
         width: 160px;
     }
     /*porque*/
     .card-image--because{
-        width: 180px;
-        height: 180px;
+        width: 160px;
+        height: auto;
     }
     .name--because{
         font-size: 20px;
@@ -597,7 +599,8 @@
     /*especialistas*/
     .picture__grid {
         grid-template-columns: 1fr;
-        height: max-content;
+        height: 100%;
+        gap: 10px;
     }
     .picture__esp {
         height: 100vh;
@@ -606,8 +609,21 @@
         flex-direction: column;
     }
     .picture__paragraph {
-        width: 70%;
-        font-size: 16px;
+        width: 100%;
+        font-size: 14px;
+    }
+    .textos{
+        padding: 10px;
+    }
+    .picture__title--esp{
+        font-size: 15px;
+    }
+    .picture__item{
+        height: auto;
+    }
+    .picture__img--esp{
+        width: 60px;
+        height: 60px;
     }
 
 }
@@ -627,7 +643,7 @@
         top: 25%;
     }
     .bg-slider-thumbs{
-        bottom: 7em;
+        bottom: 5%;
     }
     .logo{
         width: 100%;
@@ -646,7 +662,7 @@
     }
     .picture__grid {
         position: relative;
-        gap: 25px;
+        gap: 10px;
     }
     .picture__content {
         height: 100%;
@@ -655,19 +671,19 @@
         width: 26%;
     }
     .picture__title--num {
-        font-size: 3.8em;
+        font-size: 3.2em;
     }
     .picture__paragraph--size{
         font-size: 14px;
     }
     .paragraph {
-        font-size: 1.1em;
+        font-size: 15px;
     }
     .cta__leyend {
-        font-size: 1em;
+        font-size: 13px;
     }
     .cta__btn {
-        width: 190px;
+        width: 160px;
     }
     .main__title{
         text-align: center;
@@ -683,10 +699,51 @@
         height: 60px;
     }
     .picture__title--esp {
-        font-size: 1em;
+        font-size: 15px;
     }
     .footer__contenido{
         padding: 0 0 105px 0;
     }
 }
+@media (max-width: 330px){
+    .card-image {
+        height: auto;
+        width: 100%;
+    }
+    .swiper-slide .text-content p{
+        font-size: 12px;
+        padding-top: 10px;
+    }
+    .card-image--because{
+        width: 160px;
+    }
+    .name{
+        font-size: 14px;
+    }
+    .name--because{
+        font-size: 16px;
+    }
+    .description{
+        font-size: 15px;
+    }
+    .paragraph--esp{
+        padding: 10px;
+    }
+    .picture__esp{
+        height: auto;
+    }
+    
+}
 
+@media (min-width: 1200px){
+    .picture__img--esp{
+        width: 110px;
+    }
+    .picture__title--esp{
+        font-size: 18px;
+    }
+    .picture__paragraph{
+        font-size: 16px;
+    }
+
+}

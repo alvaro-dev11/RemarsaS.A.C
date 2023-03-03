@@ -119,3 +119,10 @@ window.addEventListener("click", (e) => {
         }, 900)
     }
 })
+
+let $cta = document.querySelectorAll(".cta");
+$cta.forEach(a=>{
+    a.addEventListener("click", (e)=>{
+        e.preventDefault();
+    })
+})
