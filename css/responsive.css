@@ -524,6 +524,9 @@
     .servicios {
         padding: 0;
     }
+    .textos{
+        padding: 10px;
+    }
 
 }
 
@@ -611,9 +614,6 @@
     .picture__paragraph {
         width: 100%;
         font-size: 14px;
-    }
-    .textos{
-        padding: 10px;
     }
     .picture__title--esp{
         font-size: 15px;
