@@ -82,8 +82,40 @@ window.addEventListener('scroll', () => {
 
 // ===========Banner===========
 const $bannerTitle = document.querySelector(".banner-title"),
-        $bannerNav = document.querySelector(".banner-nav");
-window.addEventListener('load', ()=>{
+    $bannerNav = document.querySelector(".banner-nav");
+window.addEventListener('load', () => {
     $bannerTitle.classList.add("active");
     $bannerNav.classList.add("active");
+})
+
+// ===========Modal===========
+let cerrar = document.querySelectorAll(".cerrar")[0];
+let abrir = document.querySelectorAll(".cta")[0];
+let modal = document.querySelectorAll(".modal")[0];
+let modalC = document.querySelectorAll(".modal-container")[0];
+
+abrir.addEventListener('click', (e) => {
+    e.preventDefault();
+    modalC.style.opacity = "1";
+    modalC.style.visibility = "visible";
+    modal.classList.toggle("modal-close");
+});
+cerrar.addEventListener("click", () => {
+    modal.classList.toggle("modal-close");
+
+    setTimeout(function () {
+        modalC.style.opacity = "0";
+        modalC.style.visibility = "hidden";
+    }, 900)
+})
+window.addEventListener("click", (e) => {
+    // console.log(e.target)
+    if (e.target == modalC) {
+        modal.classList.toggle("modal-close");
+
+        setTimeout(function () {
+            modalC.style.opacity = "0";
+            modalC.style.visibility = "hidden";
+        }, 900)
+    }
 })

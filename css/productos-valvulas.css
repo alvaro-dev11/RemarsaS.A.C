@@ -1,0 +1,383 @@
+@import url('main.css');
+
+.banner--valvulas {
+    background: url('../assets/img/valvulas/banner.png');
+    background-size: cover;
+    background-position: center;
+}
+
+.img-show {
+    height: 30%;
+}
+
+/* Card Remarsa */
+.card {
+    position: relative;
+    height: 400px;
+    margin: 20px auto;
+    border-radius: 20px;
+    transition: 0.5s;
+    transition-delay: 0.5s;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+.card--overflow{
+    overflow: visible;
+}
+.card:hover {
+    height: 500px;
+    transition-delay: 0s;
+}
+
+.circle {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: var(--sombra);
+}
+
+.circle::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: var(--clr);
+    clip-path: circle(120px at center);
+    transition: 0.5s;
+}
+
+.card:hover .circle::before {
+    clip-path: circle(400px at center);
+}
+
+.circle .logo {
+    position: relative;
+    width: 220px;
+    transition: 0.5s;
+    transition-delay: 0.5s;
+}
+
+.card:hover .circle .logo {
+    transform: scale(0);
+    transition-delay: 0s;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    position: absolute;
+    height: 100%;
+    left: 0;
+    opacity: 0;
+    transition: 0.5s;
+    visibility: hidden;
+    text-align: left;
+    padding: 10px;
+}
+
+.card:hover .content {
+    left: 0;
+    opacity: 1;
+    visibility: visible;
+    transition-delay: 0.5s;
+}
+
+.content h2 {
+    margin: 0;
+    color: var(--gris2);
+    text-transform: uppercase;
+    font-size: 22px;
+    line-height: 1em;
+}
+
+.content p {
+    color: var(--gris);
+    font-size: 15px;
+}
+
+.content a {
+    position: relative;
+    color: var(--blanco);
+    background-color: var(--gris);
+    padding: 10px 20px;
+    border-radius: 8px;
+    margin-top: 10px;
+    display: inline-block;
+    text-decoration: none;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+
+.product_img {
+    position: absolute;
+    top: 80%;
+    right: 2%;
+    transform: translate(-50%, -50%) scale(0);
+    height: 80px;
+    transition: 0.5s;
+    transition-delay: 0s;
+    display: none;
+}
+
+.card:hover .product_img {
+    left: 72%;
+    transform: translate(-50%, -50%) scale(1);
+    transition-delay: 0.5s;
+}
+
+/* Fin Card Remarsa */
+
+/* Modal */
+.modal-container {
+    opacity: 0;
+    visibility: hidden;
+    position: fixed;
+    z-index: 1000;
+    width: 100%;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, .5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.modal {
+    max-width: 660px;
+    width: 100%;
+    height: 90%;
+    background-color: var(--blanco);
+    border-radius: 10px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    position: relative;
+    transition: transform 1s;
+    transform: translateY(0%);
+    /* overflow: hidden; */
+}
+.modal-close{
+    transform: translateY(-200%);
+}
+
+.cerrar {
+    display: inline-block;
+    width: 25px;
+    height: 25px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin: 10px;
+    cursor: pointer;
+}
+
+.modal-title {
+    color: var(--gris);
+    text-align: center;
+    font-size: 14px;
+    padding-bottom: 10px;
+    position: absolute;
+    right: 0;
+    left: 0;
+    top: 7%;
+}
+
+.modal-title::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    width: 90px;
+    height: 3px;
+    background-color: var(--color-secundario);
+    border-radius: 27px;
+}
+
+.modal-content {
+    position: absolute;
+    right: 0;
+    left: 0;
+    bottom: 2%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 20px;
+    padding: 10px;
+}
+
+.modal-figure {
+    width: 200px;
+}
+
+.modal-figure img {
+    width: 100%;
+}
+
+.modal-textos {
+    text-align: left;
+}
+
+.modal-texto,
+ul li {
+    font-size: 11px;
+}
+
+ul {
+    margin-left: 10px;
+}
+
+ul li {
+    list-style: disc;
+}
+
+/* Fin Modal*/
+
+@media (min-width: 375px) {
+    .modal {
+        height: 80%;
+        width: 90%;
+    }
+
+    .modal-title {
+        font-size: 18px;
+        text-align: left;
+        margin: 0 20px;
+    }
+
+    .modal-title::before {
+        margin-left: unset;
+        margin-right: unset;
+        height: 5px;
+    }
+    .modal-content{
+        padding: 18px;
+        bottom: 0;
+        row-gap: 5px;
+    }
+    .modal-texto,
+    ul li {
+        font-size: 12px;
+    }
+}
+
+@media (min-width: 500px){
+    .content{
+        padding: 15px;
+    }
+    .content h2{
+        font-size: 24px;
+    }
+    .content p{
+        font-size: 16px;
+    }
+    .circle .logo {
+        width: 240px;
+    }
+}
+
+@media (min-width: 768px) {
+    .img-show {
+        height: 55%;
+    }
+    .modal-content{
+        bottom: 5%;
+    }
+    .card{
+        position: relative;
+        width: 300px;
+        height: 350px;
+        margin: 20px auto;
+        border-radius: 20px;
+        transition: 0.5s;
+        transition-delay: 0.5s;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+    }
+    .card:hover{
+        width: 600px;
+        transition-delay: 0s;
+    }
+    .circle .logo {
+        width: 260px;
+    }
+    .content{
+        align-items: flex-start;
+        padding: 20px;
+    }
+    .content h2{
+        font-size: 2.5em;
+    }
+    .content p{
+        font-size: 18px;
+    }
+    .product_img {
+        display: block;
+    }
+}
+
+@media (min-width: 1024px) {
+    .modal {
+        height: 95%;
+        width: 100%;
+    }
+    .img-show {
+        height: 65%;
+    }
+    .modal-title{
+        font-size: 22px;
+    }
+    .modal-title::before{
+        width: 120px;
+    }
+    .modal-figure {
+        width: 230px;
+    }
+    .modal-content{
+        flex-direction: row;
+        bottom: 2%;
+        padding-top: 0;
+        padding-bottom: 0;
+        justify-content: space-between;
+        column-gap: 20px;
+    }
+    .modal-textos{
+        width: 65%;
+    }
+    .modal-texto,
+    ul li {
+        font-size: 13px;
+    }
+}
+@media (min-width: 1200px){
+    .modal-title {
+        font-size: 24px;
+    }
+    .modal-texto,
+    ul li {
+        font-size: 15px;
+    }
+    .modal-content {
+        bottom: 2%;
+    }
+    .modal-figure {
+        width: 255px;
+    }
+}
