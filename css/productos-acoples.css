@@ -181,7 +181,7 @@
     width: 100%;
     order: 1;
 }
-.textos span {
+.textos > span {
     width: 100%;
     position: relative;
     font-size: 16px;
@@ -191,7 +191,7 @@
     text-align: center;
     padding-bottom: 25px;
 }
-.textos span::before{
+.textos > span::before{
     content: "";
     position: absolute;
     left: 0;

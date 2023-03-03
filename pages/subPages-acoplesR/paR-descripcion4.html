@@ -21,6 +21,8 @@
     <link rel="stylesheet" href="../../css/responsive.css">
     <link rel="stylesheet" href="../../css/productos.css">
     <link rel="stylesheet" href="../../css/productos-acoples.css">
+    <link rel="stylesheet" href="../../css/productos-mangueras.css">
+    <link rel="stylesheet" href="../../css/productos-acoplesR.css">
     <link rel="stylesheet" href="../../css/footer.css">
 
 
@@ -30,6 +32,8 @@
     <!-- SCRIPTS JS -->
     <script src="../../js/swiper-bundle.min.js" defer></script>
     <script src="../../js/main.js" defer></script>
+    <script src="../../js/lightBox.js" defer></script>
+    
 
 
     <title>REMARSA S.A.C</title>
@@ -91,17 +95,23 @@
                             </div>
 
                             <ul class="nav__submenu">
-                                <li class="list__inside"><a href="../productos-vikers.html" class="nav__link nav__link--inside">Vickers</a>
+                                <li class="list__inside"><a href="../productos-vikers.html"
+                                        class="nav__link nav__link--inside">Vickers</a>
                                 </li>
-                                <li class="list__inside"><a href="../productos-acoples.html" class="nav__link nav__link--inside">Acoples
+                                <li class="list__inside"><a href="../productos-acoples.html"
+                                        class="nav__link nav__link--inside">Acoples
                                         Industriales</a></li>
-                                <li class="list__inside"><a href="../productos-mangueras.html" class="nav__link nav__link--inside">Mangueras
+                                <li class="list__inside"><a href="../productos-mangueras.html"
+                                        class="nav__link nav__link--inside">Mangueras
                                         Hidráulicas y Accesorios</a></li>
-                                <li class="list__inside"><a href="../productos-acoplesR.html" class="nav__link nav__link--inside">Acoples
+                                <li class="list__inside"><a href="../productos-acoplesR.html"
+                                        class="nav__link nav__link--inside">Acoples
                                         Rápidos</a></li>
-                                <li class="list__inside"><a href="../productos-valvulas.html" class="nav__link nav__link--inside">Valvulas y
+                                <li class="list__inside"><a href="../productos-valvulas.html"
+                                        class="nav__link nav__link--inside">Valvulas y
                                         Cilindros</a></li>
-                                <li class="list__inside"><a href="../productos-acoplesA.html" class="nav__link nav__link--inside">Acoples y
+                                <li class="list__inside"><a href="../productos-acoplesA.html"
+                                        class="nav__link nav__link--inside">Acoples y
                                         Adaptadores Hidráulicos</a></li>
                             </ul>
                         </li>
@@ -117,11 +127,13 @@
                             <ul class="nav__submenu">
                                 <li class="list__inside"><a href="../servicios-mantenimiento.html"
                                         class="nav__link nav__link--inside">Mantenimiento</a></li>
-                                <li class="list__inside"><a href="servicios-ventajas.html" class="nav__link nav__link--inside">Ventajas</a>
+                                <li class="list__inside"><a href="servicios-ventajas.html"
+                                        class="nav__link nav__link--inside">Ventajas</a>
                                 </li>
                                 <li class="list__inside"><a href="../servicios-reparaciones.html"
                                         class="nav__link nav__link--inside">Reparaciones</a></li>
-                                <li class="list__inside"><a href="../servicios-garantia.html" class="nav__link nav__link--inside">Garantía</a>
+                                <li class="list__inside"><a href="../servicios-garantia.html"
+                                        class="nav__link nav__link--inside">Garantía</a>
                                 </li>
                                 <li class="list__inside"><a href="../servicios-abastecimiento.html"
                                         class="nav__link nav__link--inside">Abastecimiento</a></li>
@@ -153,36 +165,115 @@
     </header>
 
     <!-- Contenido principal / Banner -->
-    <section class="banner banner--acoples">
-        <h1 class="banner-title title">Acoples Industriales</h1>
+    <section class="banner banner--mangueras">
+        <h1 class="banner-title title">Acoples Rápidos</h1>
         <nav class="banner-nav">
             <a href="../productos.html" class="banner-nav-link">
                 <img src="../../assets/icons/home.svg" alt="icon-home" class="banner-nav-link-icon">
                 Productos /
             </a>
-            <a href="../productos-acoples.html" class="banner-nav-link">
-                Acoples Industriales /
+            <a href="../productos-acoplesR.html" class="banner-nav-link">
+                Acoples Rápidos /
             </a>
-            <span class="banner-span">Acoples rápidos para aire</span>
+            <span class="banner-span">Lista de acoples rápidos y adaptadores</span>
         </nav>
     </section>
 
-    <!-- Contenido -->
-    <main class="container">
-        <article class="column">
-            <div class="figure">
-                <img src="../../assets/img/acoplesInd/item1.png" alt="img">
+    <!-- Categoria de Productos -->
+    <section class="productos container">
+        <span class="title-second">Lista de acoples rápidos y adaptadores</span>
+        <div class="grid-card-acoplesInd container">
+            <div class="card-acoplesInd">
+                <img src="../../assets/img/acoplesR/ListadeAcoples/p1.jpg"
+                    alt="Acople rápido espiga fija"
+                    class="card-img card-img-z">
+                <div class="card-body">
+                    <div class="card-nombre">
+                        <img src="../../assets/icons/item.svg" alt="icon-item" class="card-icon">
+                        <span class="card-nombre-item card-nombre-item-left">Acople rápido espiga fija</span>
+                    </div>
+                </div>
+                <div id="btn-read" class="card-footer-acoplesInd">
+                    <span class="btn-read">Ver</span>
+                </div>
             </div>
-            <div class="textos">
-                <span>Acoples rápidos para aire</span>
-                <p>Para las mangueras industriales tenemos una variedad de acoples en hierro de ½ hasta 4 “ al igual que acoples de sistema de acoplamiento rápido utilizado principalmente en los camiones cisterna, en aluminio, acoples machos rápidos con espiga y con rosca, al igual que los acoples tipo hembra con espiga y con rosca, tapones machos y hembras.</p>
-                <ul class="lista">
-                    <li>Los diferentes tipos son tipo A, B, C, D, E, F, V, W y polipropileno.</li>
-                    <li>Los acoples de acero inoxidable son manejados principalmente para traer del exterior.</li>
-                </ul>
+            <div class="card-acoplesInd">
+                <img src="../../assets/img/acoplesR/ListadeAcoples/p2.jpg"
+                    alt="Acople rápido hembra"
+                    class="card-img card-img-z">
+                <div class="card-body">
+                    <div class="card-nombre">
+                        <img src="../../assets/icons/item.svg" alt="icon-item" class="card-icon">
+                        <span class="card-nombre-item card-nombre-item-left">Acople rápido hembra</span>
+                    </div>
+                </div>
+                <div id="btn-read" class="card-footer-acoplesInd">
+                    <span class="btn-read">Ver</span>
+                </div>
             </div>
-        </article>
-    </main>
+            <div class="card-acoplesInd">
+                <img src="../../assets/img/acoplesR/ListadeAcoples/p3.jpg"
+                    alt="Acople rápido macho"
+                    class="card-img card-img-z">
+                <div class="card-body">
+                    <div class="card-nombre">
+                        <img src="../../assets/icons/item.svg" alt="icon-item" class="card-icon">
+                        <span class="card-nombre-item card-nombre-item-left">Acople rápido macho</span>
+                    </div>
+                </div>
+                <div id="btn-read" class="card-footer-acoplesInd">
+                    <span class="btn-read">Ver</span>
+                </div>
+            </div>
+            <div class="card-acoplesInd">
+                <img src="../../assets/img/acoplesR/ListadeAcoples/p4.jpg"
+                    alt="Acople rápido hembra - macho"
+                    class="card-img card-img--size card-img-z">
+                <div class="card-body">
+                    <div class="card-nombre">
+                        <img src="../../assets/icons/item.svg" alt="icon-item" class="card-icon">
+                        <span class="card-nombre-item card-nombre-item-left">Acople rápido hembra - macho</span>
+                    </div>
+                </div>
+                <div id="btn-read" class="card-footer-acoplesInd">
+                    <span class="btn-read">Ver</span>
+                </div>
+            </div>
+            <div class="card-acoplesInd">
+                <img src="../../assets/img/acoplesR/ListadeAcoples/p5.jpg"
+                    alt="Adaptador para acople"
+                    class="card-img card-img-z">
+                <div class="card-body">
+                    <div class="card-nombre">
+                        <img src="../../assets/icons/item.svg" alt="icon-item" class="card-icon">
+                        <span class="card-nombre-item card-nombre-item-left">Adaptador para acople</span>
+                    </div>
+                </div>
+                <div id="btn-read" class="card-footer-acoplesInd">
+                    <span class="btn-read">Ver</span>
+                </div>
+            </div>
+            <div class="card-acoplesInd">
+                <img src="../../assets/img/acoplesR/ListadeAcoples/p6.jpg"
+                    alt="Espiga acople rápido"
+                    class="card-img card-img-z">
+                <div class="card-body">
+                    <div class="card-nombre">
+                        <img src="../../assets/icons/item.svg" alt="icon-item" class="card-icon">
+                        <span class="card-nombre-item card-nombre-item-left">Espiga acople rápido</span>
+                    </div>
+                </div>
+                <div id="btn-read" class="card-footer-acoplesInd">
+                    <span class="btn-read">Ver</span>
+                </div>
+            </div>
+            <div class="container-img">
+                <img src="" alt="" class="img-show">
+                <img src="../../assets/icons/close.svg" alt="icon-close" class="img-close">
+                <p class="copy"></p>
+            </div>
+        </div>
+    </section>
 
     <!-- Productos -->
     <section class="productos container">
@@ -294,7 +385,7 @@
             <!-- <div class="swiper-pagination"></div> -->
         </div>
     </section>
-    
+
     <!-- Footer -->
     <footer class="footer">
         <main class="footer__main container">
@@ -412,7 +503,7 @@
                 </div>
                 <div class="footer__group">
                     <div class="footer__item">
-                        <a href="../productos.html" target="_blank" class="footer__link">
+                        <a href="../../productos.html" target="_blank" class="footer__link">
                             <img src="../../assets/icons/navigation.svg" alt="icon-phone" class="footer__icon">
                             <p class="footer__text">Productos</p>
                         </a>
@@ -420,7 +511,7 @@
                 </div>
                 <div class="footer__group">
                     <div class="footer__item">
-                        <a href="../servicios.html" target="_blank" class="footer__link">
+                        <a href="../../servicios.html" target="_blank" class="footer__link">
                             <img src="../../assets/icons/navigation.svg" alt="icon-phone" class="footer__icon">
                             <p class="footer__text">Servicios</p>
                         </a>
@@ -428,7 +519,7 @@
                 </div>
                 <div class="footer__group">
                     <div class="footer__item">
-                        <a href="../nosotros.html" target="_blank" class="footer__link">
+                        <a href="../../nosotros.html" target="_blank" class="footer__link">
                             <img src="../../assets/icons/navigation.svg" alt="icon-phone" class="footer__icon">
                             <p class="footer__text">Nosotros</p>
                         </a>
@@ -436,7 +527,7 @@
                 </div>
                 <div class="footer__group">
                     <div class="footer__item">
-                        <a href="../contacto.html" target="_blank" class="footer__link">
+                        <a href="../../contacto.html" target="_blank" class="footer__link">
                             <img src="../../assets/icons/navigation.svg" alt="icon-phone" class="footer__icon">
                             <p class="footer__text">Contácto</p>
                         </a>
@@ -448,6 +539,7 @@
             Alvaro
             Villanueva & Daniel Zapata</h3>
     </footer>
+
 
     <!-- Botones de ayuda -->
     <div class="buttons">
