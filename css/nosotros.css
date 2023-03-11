@@ -1,0 +1,222 @@
+@import url('main.css');
+
+.banner--nosotros {
+    background-image: url('../assets/img/nosotros/banner.jpg');
+    background-position: center;
+    background-size: cover;
+}
+
+.banner-title {
+    justify-content: center;
+    padding-left: 0 !important;
+}
+
+.nosotros-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.textos {
+    max-width: 650px;
+    width: 100%;
+}
+
+.textos h1 {
+    position: relative;
+    text-transform: uppercase;
+    color: var(--color-primario);
+    font-weight: 700;
+    letter-spacing: 2.5px;
+    margin-bottom: 20px;
+    width: max-content;
+    padding: 0 10px;
+}
+
+.textos h1::before,
+.textos h1::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    width: 6px;
+    height: 6px;
+    background-color: var(--color-primario);
+    border-radius: 50%;
+    transform: translateY(-50%);
+}
+
+.textos h1::before {
+    left: 0;
+}
+
+.textos h1::after {
+    right: 0;
+}
+
+.parrafo {
+    text-align: justify;
+    color: var(--gris);
+    line-height: 1.8;
+    margin-bottom: 20px;
+}
+
+.parrafo span {
+    font-size: 18px;
+    font-weight: 600;
+    color: var(--color-azul);
+}
+
+.btn {
+    display: inline-block;
+    background-color: var(--color-primario);
+    color: var(--blanco);
+    outline: none;
+    border: none;
+    padding: 15px 20px;
+    border-radius: 4px;
+    max-width: 300px;
+    width: 100%;
+}
+
+.btn span {
+    font-size: 16px;
+}
+
+.btn--flex {
+    display: flex;
+    align-items: center;
+}
+
+.btn:active {
+    border: 2px solid var(--color-secundario);
+    box-shadow: 0 0 10px var(--color-secundario);
+}
+
+.figure {
+    max-width: 330px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.figure img {
+    width: 100%;
+}
+
+@media (max-width: 600px) {
+    .textos {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .textos h1 {
+        font-size: 1.8em;
+    }
+
+    .btn--flex {
+        justify-content: space-evenly;
+    }
+}
+
+@media (max-width: 350px) {
+    .textos h1 {
+        font-size: 1.3em;
+    }
+
+    .parrafo {
+        font-size: 14px;
+    }
+
+    .parrafo span {
+        font-size: 16px;
+    }
+}
+
+@media (min-width: 600px) {
+    .textos {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .textos h1 {
+        font-size: 2em;
+        padding-left: 22px;
+        padding-right: 22px;
+    }
+
+    .textos h1::before,
+    .textos h1::after {
+        width: 9px;
+        height: 9px;
+    }
+
+    .parrafo {
+        font-size: 16px;
+        margin-bottom: 30px;
+    }
+
+    .parrafo span {
+        font-size: 18px;
+    }
+
+    .btn {
+        padding: 15px 20px;
+    }
+
+    .btn span {
+        font-size: 16px;
+    }
+
+    .btn--flex {
+        justify-content: space-around;
+    }
+}
+
+@media (min-width: 1200px) {
+    .textos {
+        align-items: flex-start;
+    }
+
+    .textos h1 {
+        font-size: 3em;
+        padding-left: 28px;
+        padding-right: 28px;
+    }
+
+    .textos h1::before,
+    .textos h1::after {
+        width: 11px;
+        height: 11px;
+    }
+
+    .parrafo span {
+        font-size: 20px;
+    }
+
+    .figure {
+        max-width: 500px;
+    }
+
+    .btn {
+        opacity: 1;
+    }
+
+    .btn:hover {
+        opacity: .7;
+        transition: opacity .3s;
+
+    }
+
+    .btn img {
+        transform: translate(0);
+        transition: transform .3s ease;
+    }
+
+    .btn:hover img {
+        transform: translateX(10px);
+    }
+
+}
