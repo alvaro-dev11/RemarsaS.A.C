@@ -105,6 +105,9 @@
 }
 
 @media (max-width: 600px) {
+    .nosotros-container{
+        padding: 12px;
+    }
     .textos {
         display: flex;
         flex-direction: column;
@@ -114,7 +117,9 @@
     .textos h1 {
         font-size: 1.8em;
     }
-
+    .btn span {
+        font-size: 15px;
+    }
     .btn--flex {
         justify-content: space-evenly;
     }
