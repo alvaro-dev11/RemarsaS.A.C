@@ -450,6 +450,7 @@
     }
     .cta__btn {
         width: 160px;
+        margin-left: 10px;
     }
     .cta__leyend {
         font-size: .8rem;
@@ -518,6 +519,7 @@
     }
     .paragraph {
         font-size: .9rem;
+        padding: 10px;
     }
     .picture__esp {
         height: 500px;
@@ -526,9 +528,6 @@
     /* servicios */
     .servicios {
         padding: 0;
-    }
-    .textos{
-        padding: 10px;
     }
 
 }

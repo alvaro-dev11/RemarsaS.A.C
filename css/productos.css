@@ -39,9 +39,9 @@
     color: var(--blanco);
     text-transform: uppercase;
     letter-spacing: 10px;
-    font-size: 2em;
+    font-size: 48px;
     padding-left: 10px;
-    font-weight: 500;
+    font-weight: 600;
 }
 /*========MENU DE NAVEGACION========*/
 .banner-nav {
@@ -248,9 +248,9 @@
     }
 }
 
-@media (max-width: 500px){
+@media (max-width: 600px){
     .banner .title{
-        font-size: 32px;
+        font-size: 38px;
         font-weight: 600 !important;
         justify-content: center !important;
         text-align: center;

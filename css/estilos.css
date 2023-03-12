@@ -433,6 +433,7 @@
 
 .textos {
     margin-bottom: 10px;
+    text-align: justify;
 }
 
 .paragraph {
@@ -449,7 +450,7 @@
     display: flex;
     align-items: center;
     gap: 5px;
-    width: 200px;
+    width: 220px;
     padding: 0 20px;
     border: 2px solid var(--color-azul);
     transition: gap .5s ease;

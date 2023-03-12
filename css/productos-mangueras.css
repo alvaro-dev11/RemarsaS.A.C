@@ -4,8 +4,11 @@
     background-size: cover;
     background-position: center;
 }
-.grid-card-acoplesInd{
-    min-height: unset;
+.grid-card-mangueras{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 50px;
+    padding: 0;
 }
 .title-second{
     color: var(--negro);
