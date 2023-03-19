@@ -1,1 +1,522 @@
-<h1>VENTAJAS</h1>
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- GOOGLE FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+
+    <!-- swiper-bundle -->
+    <link rel="stylesheet" href="../css/swiper-bundle.min.css">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="../css/estilos.css">
+    <link rel="stylesheet" href="../css/responsive.css">
+    <link rel="stylesheet" href="../css/productos.css">
+    <link rel="stylesheet" href="../css/contacto.css">
+    <link rel="stylesheet" href="../css/servicios.css">
+    <link rel="stylesheet" href="../css/footer.css">
+
+
+    <!-- FAVICON -->
+    <link rel="shortcut icon" href="../assets/img/favicon.ico" type="image/x-icon">
+
+    <!-- SCRIPTS JS -->
+    <script src="../js/swiper-bundle.min.js" defer></script>
+    <script src="../js/main.js" defer></script>
+
+
+    <title>REMARSA S.A.C</title>
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header class="header">
+        <div class="logo">
+            <a href="../index.html" class="logo__container">
+                <img src="../assets/img/logo.jpg" alt="REMARSA-logo" class="logo__img">
+            </a>
+        </div>
+        <div class="navbar">
+            <div class="info">
+                <div class="info__contact">
+                    <div class="info__item">
+                        <a href="mailto:ventas@remarsac.com">
+                            <img src="../assets/icons/email.svg" alt="email-icon" class="email__icon">
+                            <span class="info__leyenda info__leyenda--email">ventas@remarsac.com</span>
+                        </a>
+                    </div>
+                    <div class="info__item">
+                        <a href="https://api.whatsapp.com/send?phone=+51980126828&text=Hola, me gustaría comprar tu producto!"
+                            target="_blank">
+                            <img src="../assets/icons/phone.svg" alt="email-icon" class="email__icon">
+                            <span class="info__leyenda">980126828</span>
+                        </a>
+                    </div>
+                </div>
+                <div class="info__location">
+                    <a href="contacto.html">
+                        <img src="../assets/icons/location.svg" alt="email-icon" class="email__icon ">
+                        <span class="info__leyenda">Jr. Santa Leonor 6366 Urb. Santa Luisa SMP Lima - Perú</span>
+                    </a>
+                </div>
+            </div>
+            <!-- Barra de Navegación -->
+            <nav class="nav">
+                <div class="nav__container">
+                    <a href="#menu" class="menu"><img src="../assets/icons/menu-hamburguer.svg" alt="icon-menu"></a>
+                    <a href="#close" class="menu close"><img src="../assets/icons/close.svg" alt="icon-close"></a>
+
+                    <ul class="nav__menu" id="menu">
+                        <li class="nav__item">
+                            <div class="nav__button">
+                                <img src="../assets/icons/home.svg" alt="icon-home" class="nav__icon">
+                                <a href="../index.html" class="nav__link nav__link--efect">Inicio</a>
+                            </div>
+                        </li>
+                        <li class="nav__item nav__item--click">
+                            <div class="nav__button nav__button--click">
+                                <img src="../assets/icons/products.svg" alt="icon-products" class="nav__icon">
+                                <a href="productos.html">
+                                    <span class="nav__link nav__link--efect">Productos</span>
+                                </a>
+                                <img src="../assets/icons/arrow.svg" alt="icon-arrow" class="nav__arrow">
+                            </div>
+
+                            <ul class="nav__submenu">
+                                <li class="list__inside"><a href="productos-vikers.html"
+                                        class="nav__link nav__link--inside">Vickers</a>
+                                </li>
+                                <li class="list__inside"><a href="productos-acoples.html"
+                                        class="nav__link nav__link--inside">Acoples
+                                        Industriales</a></li>
+                                <li class="list__inside"><a href="productos-mangueras.html"
+                                        class="nav__link nav__link--inside">Mangueras
+                                        Hidráulicas y Accesorios</a></li>
+                                <li class="list__inside"><a href="productos-acoplesR.html"
+                                        class="nav__link nav__link--inside">Acoples
+                                        Rápidos</a></li>
+                                <li class="list__inside"><a href="productos-valvulas.html"
+                                        class="nav__link nav__link--inside">Valvulas y
+                                        Cilindros</a></li>
+                                <li class="list__inside"><a href="productos-acoplesA.html"
+                                        class="nav__link nav__link--inside">Acoples y
+                                        Adaptadores Hidráulicos</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav__item nav__item--click">
+                            <div class="nav__button nav__button--click">
+                                <img src="../assets/icons/services.svg" alt="icon-products" class="nav__icon">
+                                <a href="servicios.html">
+                                    <span class="nav__link nav__link--efect">Servicios</span>
+                                </a>
+                                <img src="../assets/icons/arrow.svg" alt="icon-arrow" class="nav__arrow">
+                            </div>
+
+                            <ul class="nav__submenu">
+                                <li class="list__inside"><a href="servicios-mantenimiento.html"
+                                        class="nav__link nav__link--inside">Mantenimiento</a></li>
+                                <li class="list__inside"><a href="servicios-ventajas.html"
+                                        class="nav__link nav__link--inside">Ventajas</a>
+                                </li>
+                                <li class="list__inside"><a href="servicios-reparaciones.html"
+                                        class="nav__link nav__link--inside">Reparaciones</a></li>
+                                <li class="list__inside"><a href="servicios-garantia.html"
+                                        class="nav__link nav__link--inside">Garantía</a>
+                                </li>
+                                <li class="list__inside"><a href="servicios-abastecimiento.html"
+                                        class="nav__link nav__link--inside">Abastecimiento</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav__item">
+                            <div class="nav__button">
+                                <img src="../assets/icons/especialistas.svg" alt="icon-home" class="nav__icon">
+                                <a href="../index.html" class="nav__link nav__link--efect">Especialistas</a>
+                            </div>
+                        </li>
+                        <li class="nav__item">
+                            <div class="nav__button">
+                                <img src="../assets/icons/nosotros.svg" alt="icon-home" width="24" height="24"
+                                    class="nav__icon">
+                                <a href="nosotros.html" class="nav__link nav__link--efect">Nosotros</a>
+                            </div>
+                        </li>
+                        <li class="nav__item">
+                            <div class="nav__button">
+                                <img src="../assets/icons/contacto.svg" alt="icon-home" class="nav__icon">
+                                <a href="contacto.html" class="nav__link nav__link--efect">Contacto</a>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Contenido principal / Banner -->
+    <section class="banner banner--ventajas">
+        <h1 class="banner-title title banner-title-center">Ventajas</h1>
+        <nav class="banner-nav">
+            <a href="servicios.html" class="banner-nav-link">
+                <img src="../../assets/icons/home.svg" alt="icon-home" class="banner-nav-link-icon">
+                Servicios /
+            </a>
+            <span class="banner-span">Ventajas</span>
+        </nav>
+    </section>
+
+    <!-- Contenido principal / mantenimiento -->
+    <section class="mantenimiento container">
+        <div class="textos textos-mg">
+            <h1 class="textos-titulo">
+                ¿En que consiste este <span>servicio?</span>
+            </h1>
+            <p class="textos-p">
+                Con nuestros técnicos especializados en hidráulica. Somos capaces de realizar reparaciones, revisiones, modificaciones de componentes hidráulicos.
+            </p>
+        </div>
+        <div class="textos-container">
+            <div class="textos textos-mg">
+                <h1 class="textos-titulo textos-titulo--flex">
+                    <img src="../assets/icons/ventajas.svg" alt="icon" class="icon">
+                    ventajas
+                </h1>
+                <ul class="textos-ul">
+                    <li>Inventario de productos HIDRÁULICOS.</li>
+                    <li>Importación de emergencia en productos HIDRÁULICOS.</li>
+                    <li>Servicio de Importación y exportación Express de refacciones hidráulicas.</li>
+                    <li>Adquisición de componentes fuera de mercado y de difícil hallazgo.</li>
+                    <li>Servicios programados de entrega.</li>
+                </ul>
+            </div>
+            <figure class="figure-mt">
+                <img src="../assets/img/servicios/img-ventajas.jpg" alt="img-mantenimiento">
+            </figure>
+        </div>
+
+        <!-- CONTACTO -->
+        <section>
+            <div class="cards-container">
+                <div class="box">
+                    <div class="box-content">
+                        <h3>Nuestras sedes</h3>
+                        <div class="box-textos">
+                            <span>Lima</span>
+                            <ul class="lista">
+                                <li>
+                                    <span><b>Central: </b>Jr. Santa Leonor 6366 Urb. Santa Luisa SMP Lima - Peru</span>
+                                </li>
+                                <li>
+                                    <span><b>Sucursal: </b>Av. colonial 471 cercado de Lima</span>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="box-textos">
+                            <span>Provincia</span>
+                            <ul class="lista">
+                                <li>
+                                    <span><b>Sucursal: </b>Av. Enrique Meiggs 1052 Chimbote</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="box-content">
+                        <h3>Correos</h3>
+                        <div class="box-textos">
+                            <div class="box-group">
+                                <a href="mailto:ventas@remarsac.com" target="_blank">
+                                    <img src="../assets/icons/email3.svg" alt="icon-phone">
+                                    <p>ventas@remarsac.com</p>
+                                </a>
+                            </div>
+                            <div class="box-group">
+                                <a href="mailto:ventas2@remarsac.com" target="_blank">
+                                    <img src="../assets/icons/email3.svg" alt="icon-phone">
+                                    <p>ventas2@remarsac.com</p>
+                                </a>
+                            </div>
+                            <div class="box-group">
+                                <a href="mailto:ventas3@remarsac.com" target="_blank">
+                                    <img src="../assets/icons/email3.svg" alt="icon-phone">
+                                    <p>ventas3@remarsac.com</p>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="box-content">
+                        <h3>Llámanos</h3>
+                        <div class="box-textos">
+                            <span>Lima</span>
+                            <ul class="lista">
+                                <li>
+                                    <b>Central: </b>
+                                    <a href="https://api.whatsapp.com/send?phone=+51980126828&amp;text=Hola, me gustaría comprar tu producto!"
+                                        target="_blank">
+                                        <img src="../assets/icons/whatsapp2.svg" alt="icon-whatsapp">
+                                        <p>980126828</p>
+                                    </a>
+                                </li>
+                                <li>
+                                    <b>Sucursal: </b>
+                                    <a href="https://api.whatsapp.com/send?phone=+51990088849&amp;text=Hola, me gustaría comprar tu producto!"
+                                        target="_blank">
+                                        <img src="../assets/icons/whatsapp2.svg" alt="icon-whatsapp">
+                                        <p>990088849</p>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="box-textos">
+                            <span>Provincia</span>
+                            <ul class="lista">
+                                <li>
+                                    <b>Sucursal: </b>
+                                    <a href="https://api.whatsapp.com/send?phone=+51998341086&amp;text=Hola, me gustaría comprar tu producto!"
+                                        target="_blank">
+                                        <img src="../assets/icons/whatsapp2.svg" alt="icon-whatsapp">
+                                        <p>998341086</p>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- CARDS -->
+        <section>
+            <h1 class="textos-titulo textos-titulo--size">
+                <span>// Nuestros</span> servicios //
+            </h1>
+            <section>
+                <div class="slide-container swiper">
+                    <div class="slide-content">
+                        <div class="card-wrapper swiper-wrapper">
+                            <div class="swiper-slide box box--bg">
+                                <figure class="box-icon">
+                                    <img src="../assets/icons/icons-ventajas/icon1.svg" alt="icon" class="icon-v">
+                                </figure>
+                                <span class="box-title">Reparaciones</span>
+                                <picture class="box-image">
+                                    <img src="../assets//img/s-ventajas/img1.jpg" alt="image" class="img">
+                                </picture>
+                            </div>
+                            <div class="swiper-slide box box--bg">
+                                <figure class="box-icon">
+                                    <img src="../assets/icons/icons-ventajas/icon2.svg" alt="icon" class="icon-v">
+                                </figure>
+                                <span class="box-title">Garantía</span>
+                                <picture class="box-image">
+                                    <img src="../assets//img/s-ventajas/img2.jpg" alt="image" class="img">
+                                </picture>
+                            </div>
+                            <div class="swiper-slide box box--bg">
+                                <figure class="box-icon">
+                                    <img src="../assets/icons/icons-ventajas/icon3.svg" alt="icon" class="icon-v">
+                                </figure>
+                                <span class="box-title">Abastecimiento</span>
+                                <picture class="box-image">
+                                    <img src="../assets//img/s-ventajas/img3.jpg" alt="image" class="img">
+                                </picture>
+                            </div>
+                            <div class="swiper-slide box box--bg">
+                                <figure class="box-icon">
+                                    <img src="../assets/icons/icons-ventajas/icon4.svg" alt="icon" class="icon-v">
+                                </figure>
+                                <span class="box-title">Mantenimiento</span>
+                                <picture class="box-image">
+                                    <img src="../assets//img/s-ventajas/img4.jpg" alt="image" class="img">
+                                </picture>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-button">
+                        <div class="swiper-button-next swiper-navBtn"></div>
+                        <div class="swiper-button-prev swiper-navBtn"></div>
+                    </div>
+                </div>
+            </section>
+        </section>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <main class="footer__main container">
+            <a href="../index.html">
+                <img src="../assets/img/logo.jpg" alt="logo" class="footer__img">
+            </a>
+            <p class="paragraph__main">REMARSA HIDRAULICA S.A.C. es una empresa con más de 30 años de experiencia en
+                la
+                comercialización de mangueras hidráulicas e industriales, fajas y acoples. Ofrecemos una gran
+                variedad
+                de mangueras y accesorios con más de 750 tipos de configuraciones. En bicromato de zinc, fabricado
+                por
+                Representaciones Marcos Risco S.A.C.</p>
+            <div class="footer__box">
+                <h2 class="footer__title">Atención</h2>
+                <div class="footer__item">
+                    <img src="../assets/icons/calendar.svg" alt="icon-calendar" class="footer__icon">
+                    <p class="footer__text footer__text--cursor">Lunes a Viernes: 8:30 am - 5:00 pm</p>
+                </div>
+                <div class="footer__item">
+                    <img src="../assets/icons/calendar.svg" alt="icon-calendar" class="footer__icon">
+                    <p class="footer__text footer__text--cursor">Sábado: 8:30 am - 1:00 pm</p>
+                </div>
+            </div>
+        </main>
+        <div class="footer__contenido container">
+            <div class="footer__box">
+                <h2 class="footer__title">Contacto</h2>
+                <div class="footer__group">
+                    <div class="footer__item">
+                        <a href="/" class="footer__link">
+                            <img src="../assets/icons/location2.svg" alt="icon-location" class="footer__icon">
+                            <p class="footer__text">Jr. Santa Leonor 6366 Urb. Santa Luisa SMP Lima - Peru
+                            </p>
+                        </a>
+                    </div>
+                    <div class="footer__item">
+                        <a href="https://api.whatsapp.com/send?phone=+51980126828&text=Hola, me gustaría comprar tu producto!"
+                            target="_blank" class="footer__link">
+                            <img src="../assets/icons/whatsapp.svg" alt="icon-phone" class="footer__icon">
+                            <p class="footer__text">980126828</p>
+                        </a>
+                    </div>
+                </div>
+                <hr>
+                <div class="footer__group">
+                    <div class="footer__item">
+                        <a href="/" class="footer__link">
+                            <img src="../assets/icons/location2.svg" alt="icon-location" class="footer__icon">
+                            <p class="footer__text">Av. colonial 471 cercado de Lima <b>(SUCURSAL)</b></p>
+                        </a>
+                    </div>
+                    <div class="footer__item">
+                        <a href="https://api.whatsapp.com/send?phone=+51990088849&text=Hola, me gustaría comprar tu producto!"
+                            target="_blank" class="footer__link">
+                            <img src="../assets/icons/whatsapp.svg" alt="icon-phone" class="footer__icon">
+                            <p class="footer__text">990088849</p>
+                        </a>
+                    </div>
+                </div>
+                <hr>
+                <div class="footer__group">
+                    <div class="footer__item">
+                        <a href="/" class="footer__link">
+                            <img src="../assets/icons/location2.svg" alt="icon-location" class="footer__icon">
+                            <p class="footer__text">Av. Enrique Meiggs 1052 Chimbote <b>(SUCURSAL)</b></p>
+                        </a>
+                    </div>
+                    <div class="footer__item">
+                        <a href="https://api.whatsapp.com/send?phone=+51998341086&text=Hola, me gustaría comprar tu producto!"
+                            target="_blank" class="footer__link">
+                            <img src="../assets/icons/whatsapp.svg" alt="icon-phone" class="footer__icon">
+                            <p class="footer__text">998341086</p>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer__box">
+                <h2 class="footer__title">Correos</h2>
+                <div class="footer__group">
+                    <div class="footer__item">
+                        <a href="mailto:ventas@remarsac.com" target="_blank" class="footer__link">
+                            <img src="../assets/icons/email2.svg" alt="icon-phone" class="footer__icon">
+                            <p class="footer__text">ventas@remarsac.com</p>
+                        </a>
+                    </div>
+                </div>
+                <div class="footer__group">
+                    <div class="footer__item">
+                        <a href="mailto:ventas2@remarsac.com" target="_blank" class="footer__link">
+                            <img src="../assets/icons/email2.svg" alt="icon-phone" class="footer__icon">
+                            <p class="footer__text">ventas2@remarsac.com</p>
+                        </a>
+                    </div>
+                </div>
+                <div class="footer__group">
+                    <div class="footer__item">
+                        <a href="mailto:ventas3@remarsac.com" target="_blank" class="footer__link">
+                            <img src="../assets/icons/email2.svg" alt="icon-phone" class="footer__icon">
+                            <p class="footer__text">ventas3@remarsac.com</p>
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+            <div class="footer__box">
+                <h2 class="footer__title">Navegación</h2>
+                <div class="footer__group">
+                    <div class="footer__item">
+                        <a href="../index.html" target="_blank" class="footer__link">
+                            <img src="../assets/icons/navigation.svg" alt="icon-phone" class="footer__icon">
+                            <p class="footer__text">Inicio</p>
+                        </a>
+                    </div>
+                </div>
+                <div class="footer__group">
+                    <div class="footer__item">
+                        <a href="productos.html" target="_blank" class="footer__link">
+                            <img src="../assets/icons/navigation.svg" alt="icon-phone" class="footer__icon">
+                            <p class="footer__text">Productos</p>
+                        </a>
+                    </div>
+                </div>
+                <div class="footer__group">
+                    <div class="footer__item">
+                        <a href="servicios.html" target="_blank" class="footer__link">
+                            <img src="../assets/icons/navigation.svg" alt="icon-phone" class="footer__icon">
+                            <p class="footer__text">Servicios</p>
+                        </a>
+                    </div>
+                </div>
+                <div class="footer__group">
+                    <div class="footer__item">
+                        <a href="nosotros.html" target="_blank" class="footer__link">
+                            <img src="../assets/icons/navigation.svg" alt="icon-phone" class="footer__icon">
+                            <p class="footer__text">Nosotros</p>
+                        </a>
+                    </div>
+                </div>
+                <div class="footer__group">
+                    <div class="footer__item">
+                        <a href="contacto.html" target="_blank" class="footer__link">
+                            <img src="../assets/icons/navigation.svg" alt="icon-phone" class="footer__icon">
+                            <p class="footer__text">Contácto</p>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <h3 class="footer__copy container">Copyright © 2023 REMARSA S.A.C - Todos los derechos reservados / Diseñado por
+            Alvaro
+            Villanueva & Daniel Zapata</h3>
+    </footer>
+
+
+    <!-- Botones de ayuda -->
+    <div class="buttons">
+        <a href="https://api.whatsapp.com/send?phone=+51980126828&amp;text=Hola, me gustaría comprar tu producto!"
+            target="_blank" class="btn__help">
+            <img src="../assets/img/whatsapp.png" alt="whatsapp-icon" class="btn__icon" width="80">
+        </a>
+        <button id="up" class="btn__help btn__help--back">
+            <img src="../assets/icons/arrow_up.svg" alt="back-icon" class="btn__icon btn__icon--back">
+        </button>
+    </div>
+</body>
+
+</html>

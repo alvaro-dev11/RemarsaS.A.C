@@ -15,6 +15,16 @@ section {
     background-size: cover;
     background-position: center;
 }
+.banner--ventajas{
+    background: url('../assets/img/servicios/banner-ventajas.jpg');
+    background-size: cover;
+    background-position: center;
+}
+.banner--reparaciones{
+    background: url('../assets/img/servicios/banner-reparaciones.jpg');
+    background-size: cover;
+    background-position: center;
+}
 
 .banner-title-center {
     justify-content: center;
@@ -123,6 +133,7 @@ section {
 .textos-titulo--size {
     margin-bottom: 30px;
     font-weight: 600;
+    font-size: 1.3em;
 }
 
 .slide-container {
@@ -211,6 +222,51 @@ section {
     height: 40px;
 }
 
+/* Ventajas */
+.cards-container{
+    gap: 30px;
+}
+.box--bg{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 30px;
+    box-shadow: var(--sombra);
+    background-color: var(--color-hueso);
+    border-radius: 10px;
+}
+.box-icon{
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    background-color: var(--color-primario);
+    display: grid;
+    place-content: center;
+}
+.icon-v{
+    width: 50px;
+    height: 50px;
+}
+.box-title{
+    font-size: 1.1em;
+    text-transform: uppercase;
+    font-weight: 500;
+    letter-spacing: 1.8px;
+}
+.box-image{
+    max-width: 290px;
+    width: 100%;
+}
+.img{
+    width: 100%;
+    height: 100%;
+}
+
+/* Reparaciones */
+.textos-container--unset{
+    display: unset !important;
+}
+
 @media (min-width: 600px) {
     .textos-titulo {
         font-size: 1.8em;
@@ -280,6 +336,9 @@ section {
     .figure-mt>img {
         border-radius: 20px;
     }
+    .textos-ul--p{
+        padding-left: 100px;
+    }
 }
 @media (min-width: 1200px){
     .textos-titulo {
@@ -295,5 +354,16 @@ section {
     }
     .textos-titulo--flex {
         column-gap: 30px;
+    }
+    .box-icon {
+        width: 100px;
+        height: 100px;
+    }
+    .icon-v {
+        width: 60px;
+        height: 60px;
+    }
+    .box-title{
+        font-size: 1.4em;
     }
 }
