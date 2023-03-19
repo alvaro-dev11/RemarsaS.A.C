@@ -256,3 +256,12 @@
         text-align: center;
     }
 }
+
+@media (max-width: 450px){
+    .banner .title--size{
+        font-size: 22px;
+        font-weight: 600 !important;
+        justify-content: center !important;
+        text-align: center;
+    }
+}
