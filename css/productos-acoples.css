@@ -118,6 +118,9 @@
     margin: auto;
     grid-row: 1/2;
 }
+.card-img:active{
+    box-shadow: 0 0 20px var(--color-secundario);
+}
 .card-img--size {
     width: 140px;
     margin: 0 auto;
