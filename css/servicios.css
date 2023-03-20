@@ -25,6 +25,16 @@ section {
     background-size: cover;
     background-position: center;
 }
+.banner--garantia{
+    background: url('../assets/img/servicios/banner-garantia.jpg');
+    background-size: cover;
+    background-position: center;
+}
+.banner--abastecimiento{
+    background: url('../assets/img/servicios/banner-abastecimiento.jpg');
+    background-size: cover;
+    background-position: center;
+}
 
 .banner-title-center {
     justify-content: center;
@@ -267,6 +277,12 @@ section {
     display: unset !important;
 }
 
+/* Garantía */
+.figure-mt--w{
+    max-width: unset;
+    height: 120px;
+}
+
 @media (min-width: 600px) {
     .textos-titulo {
         font-size: 1.8em;
@@ -285,6 +301,9 @@ section {
     .textos-titulo--size {
         margin-bottom: 50px;
     }
+    .textos-titulo--unset{
+        justify-content: center !important;
+    }
 
     .swiper-navBtn {
         width: 50px;
@@ -294,6 +313,9 @@ section {
     .swiper-navBtn::before,
     .swiper-navBtn::after {
         font-size: 30px;
+    }
+    .figure-mt--w{
+        height: unset;
     }
 }
 
