@@ -31,6 +31,35 @@ listElements.forEach(listElement => {
     })
 })
 
+// Navbar
+const navMenuContainer = document.querySelector(".nav-menu-container");
+let navMenu = document.querySelector(".nav__menu");
+let iconMenu = document.querySelector(".menu");
+let iconClose = document.querySelector(".close");
+
+// =========== Cambiar icono menu ===========
+iconMenu.addEventListener("click", () => {
+    iconMenu.classList.add("hidden");
+    iconClose.classList.add("visible");
+    navMenu.classList.add("move");
+    navMenuContainer.classList.add("pointer");
+})
+iconClose.addEventListener("click", () => {
+    iconMenu.classList.remove("hidden");
+    iconClose.classList.remove("visible");
+    navMenu.classList.remove("move");
+})
+
+// =========== Cerrar Navbar ===========
+window.addEventListener("click", (e) => {
+    if (e.target == navMenuContainer || e.target==navMenu) {
+        iconMenu.classList.remove("hidden");
+        iconClose.classList.remove("visible");
+        navMenu.classList.remove("move");
+        navMenuContainer.classList.remove("pointer");
+    }
+})
+
 // ===========Swiper slider productos===========
 var swiper = new Swiper(".slide-content", {
     slidesPerView: 3,
@@ -121,8 +150,8 @@ window.addEventListener("click", (e) => {
 })
 
 let $cta = document.querySelectorAll(".cta");
-$cta.forEach(a=>{
-    a.addEventListener("click", (e)=>{
+$cta.forEach(a => {
+    a.addEventListener("click", (e) => {
         e.preventDefault();
     })
 })

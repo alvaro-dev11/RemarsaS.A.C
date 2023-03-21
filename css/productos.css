@@ -155,7 +155,7 @@
     height: 100%;
 }
 .card-contet {
-    z-index: 999;
+    z-index: 888;
     position: absolute;
     inset: 0;
     display: flex;
