@@ -720,7 +720,6 @@
     }
     .picture__img--esp {
         width: 60px;
-        height: 60px;
     }
     .picture__title--esp {
         font-size: 15px;
@@ -755,6 +754,18 @@
     }
     .picture__esp{
         height: auto;
+    }
+    .picture__img--esp{
+        width: 55px;
+    }
+    .picture__title--esp{
+        font-size: 14px;
+    }
+    .picture__paragraph{
+        font-size: 13px;
+    }
+    .nav__link{
+        font-size: 12px;
     }
     
 }

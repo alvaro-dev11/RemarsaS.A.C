@@ -1,3 +1,12 @@
+// =========== Cambiar icon arrow de navbar 
+// segun la resolución de pantalla ===========
+let iconsArrow = document.querySelectorAll("#nav-arrow");
+iconsArrow.forEach(iconArrow => {
+    if(screen.width >= 1120){
+        iconArrow.src="./assets/icons/arrow.svg";
+    }
+})
+
 // ===========Swiper slider===========
 var swiper = new Swiper(".bg-slider-thumbs", {
     loop: true,
